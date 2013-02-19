@@ -1,0 +1,24 @@
+<module>
+	<rawname>tts</rawname>
+	<name>Text To Speech</name>
+	<version>2.10.0.2</version>
+	<repo>extended</repo>
+	<publisher>Schmoozecom.com</publisher>
+	<license>GPLv2+</license>
+	<type>setup</type>
+	<description>Allows you to configure text to speech, and is derived from texttospeech provided in contributed modules.</description>
+	<category>Internal Options &amp; Configuration</category>
+	<menuitems>
+		<tts>Text To Speech</tts>
+	</menuitems>
+	<depends>
+		<module>ttsengines</module>
+	</depends>
+	<location>release/2.10/tts-2.10.0.2.tgz</location>
+	<changelog>
+		2.10.0.2 Security update; downstream changes
+		2.10.0.1 Security update; downstream changes
+		*2.10.0.0* version bump
+	</changelog>
+	<md5sum>b4c60706579fb1a7633407fc0e50cb1a</md5sum>
+</module>
