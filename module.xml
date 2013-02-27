@@ -7,7 +7,7 @@
 	<license>GPLv2+</license>
 	<type>setup</type>
 	<description>Allows you to configure text to speech, and is derived from texttospeech provided in contributed modules.</description>
-	<category>Application</category>
+	<category>Applications</category>
 	<menuitems>
 		<tts>Text To Speech</tts>
 	</menuitems>
