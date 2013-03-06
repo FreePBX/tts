@@ -14,7 +14,7 @@
 	<depends>
 		<module>ttsengines</module>
 	</depends>
-	<location>release/2.11/tts-2.11.0.0.tgz</location>
+	<location>release/2.11/tts-2.11.0.1.tgz</location>
 	<changelog>
 		2.11.0.1 Fixes #6386, use install.php, remove install.sql. Return false on install if agi cant be installed
 		2.11.0.0 Re-categorize
@@ -22,5 +22,5 @@
 		2.10.0.1 Security update; downstream changes
 		*2.10.0.0* version bump
 	</changelog>
-	<md5sum>cea41578df1e3c73a62bc9eb5656eb09</md5sum>
+	<md5sum>e7d1fcd08654ea38977defe0ef7c4771</md5sum>
 </module>
