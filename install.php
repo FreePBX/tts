@@ -1,5 +1,6 @@
 <?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed');}
+
 if ( (isset($amp_conf['ASTVARLIBDIR'])?$amp_conf['ASTVARLIBDIR']:'') == '') {
 	$astlib_path = "/var/lib/asterisk";
 } else {
@@ -17,15 +18,15 @@ if ( !file_exists($astlib_path."/agi-bin/propolys-tts.agi") ) {
 
 $autoincrement = (($amp_conf["AMPDBENGINE"] == "sqlite") || ($amp_conf["AMPDBENGINE"] == "sqlite3")) ? "AUTOINCREMENT":"AUTO_INCREMENT";
 
-$sql = "CREATE TABLE IF NOT EXISTS tts ( 
+$sql = "CREATE TABLE IF NOT EXISTS tts (
 	id INTEGER NOT NULL $autoincrement,
 	name VARCHAR( 100 ) NOT NULL,
 	text VARCHAR( 250 ) NOT NULL,
 	goto VARCHAR( 50 ),
 	engine VARCHAR( 50 )
 	)";
-	
-$result = $db->query($s);
+
+$result = $db->query($sql);
 if(DB::IsError($result)) {
 	die_freepbx($result->getDebugInfo());
 }
