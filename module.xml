@@ -14,7 +14,7 @@
 	<depends>
 		<module>ttsengines</module>
 	</depends>
-	<location>release/2.11/tts-2.11.0.1.tgz</location>
+	<location>release/2.11/tts-2.11.0.2.tgz</location>
 	<changelog>
 		2.11.0.2 re #6386 - correct typo in install.php so the sql query is run, also remove uninstall.sql and use uninstall.php
 		2.11.0.1 Fixes #6386, use install.php, remove install.sql. Return false on install if agi cant be installed
@@ -23,5 +23,5 @@
 		2.10.0.1 Security update; downstream changes
 		*2.10.0.0* version bump
 	</changelog>
-	<md5sum>e7d1fcd08654ea38977defe0ef7c4771</md5sum>
+	<md5sum>5486a7116b5bd778349dd2ecabc237ee</md5sum>
 </module>
