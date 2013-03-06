@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>2.11.0.2</version>
+	<version>2.11.0.3</version>
 	<repo>extended</repo>
 	<publisher>Schmoozecom.com</publisher>
 	<license>GPLv2+</license>
@@ -16,6 +16,7 @@
 	</depends>
 	<location>release/2.11/tts-2.11.0.1.tgz</location>
 	<changelog>
+		2.11.0.3 Fixed primary key issue
 		2.11.0.2 re #6386 - correct typo in install.php so the sql query is run, also remove uninstall.sql and use uninstall.php
 		2.11.0.1 Fixes #6386, use install.php, remove install.sql. Return false on install if agi cant be installed
 		2.11.0.0 Re-categorize
