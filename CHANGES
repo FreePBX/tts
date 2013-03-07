@@ -1,0 +1,7 @@
+[2.11.0.3]
+ * Tell mysql that the id column is primary otherwise it won't install (r15259) --tm1000
+[2.11.0.2]
+ * correct typo in install.php so the sql query is run, also remove uninstall.sql and use uninstall.php (#6386,r15255) --GameGamer43
+[2.11.0.1]
+ * use install.php, remove install.sql. Return false on install if agi cant be installed (#6386, r15241) --tm1000
+ * use ENGINE instead of TYPE (#6305, r15236) --GameGamer43
