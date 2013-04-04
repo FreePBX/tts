@@ -15,7 +15,7 @@
 		<engine>asterisk ge 1.6</engine>
 		<module>ttsengines</module>
 	</depends>
-	<location>release/2.11/tts-2.11.0.4.tgz</location>
+	<location>release/2.11/tts-2.11.0.5.tgz</location>
 	<changelog>
 		2.11.0.5 #6454
 		2.11.0.4 depend on asterisk 1.6 or greater
@@ -27,5 +27,5 @@
 		2.10.0.1 Security update; downstream changes
 		*2.10.0.0* version bump
 	</changelog>
-	<md5sum>69cf63155493ffff0a35dd19f2db4d1b</md5sum>
+	<md5sum>a9c1761acddcbaaa616763c02386e65e</md5sum>
 </module>
