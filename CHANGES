@@ -1,3 +1,7 @@
+[2.11.0.5]
+ * Fixes agi syntax for newer asterisk versions --GameGamer43
+[2.11.0.4]
+ * Depend on asterisk 1.6 or greater --GameGamer43
 [2.11.0.3]
  * Tell mysql that the id column is primary otherwise it won't install (r15259) --tm1000
 [2.11.0.2]

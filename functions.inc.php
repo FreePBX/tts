@@ -61,7 +61,7 @@ function tts_get_config($p_var) {
 					$ext->add($contextname, $ttsid, '', new ext_noop('TTS: '.$ttsname));
 					$ext->add($contextname, $ttsid, '', new ext_noop('Using: '.$ttsengine));
 					$ext->add($contextname, $ttsid, '', new ext_answer());
-					$ext->add($contextname, $ttsid, '', new ext_agi('propolys-tts.agi|'.$ttstext.'|'.$ttsengine.'|'.$ttspath['path']));
+					$ext->add($contextname, $ttsid, '', new ext_agi('propolys-tts.agi,'.$ttstext.','.$ttsengine.','.$ttspath['path']));
 					$ext->add($contextname, $ttsid, '', new ext_goto($ttsgoto));
 				}
 			}
