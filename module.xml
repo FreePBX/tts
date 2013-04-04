@@ -12,6 +12,7 @@
 		<tts>Text To Speech</tts>
 	</menuitems>
 	<depends>
+		<engine>asterisk ge 1.6</engine>
 		<module>ttsengines</module>
 	</depends>
 	<location>release/2.11/tts-2.11.0.3.tgz</location>
