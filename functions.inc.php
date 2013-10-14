@@ -43,6 +43,24 @@ function tts_destinations() {
 	}
 }
 
+function tts_getdestinfo($dest) {
+	global $amp_conf;
+    if (substr(trim($dest),0,8) == 'ext-tts,') {
+    	$tts = explode(',',$dest);
+        $tts = $tts[1];
+        $thistts = tts_get($tts);
+        if (empty($thistts)) {
+        	return array();
+        } else {
+            return array('description' => sprintf(_("Text to Speech: %s"),$thistts['name']),
+            	'edit_url' => 'config.php?display=tts&id='.urlencode($usr),
+            	);
+        }
+	} else {
+    	return false;
+    }
+}
+
 function tts_get_config($p_var) {
 	global $ext;
 
