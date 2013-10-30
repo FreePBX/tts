@@ -77,7 +77,7 @@ if ($action == 'delete') {
 	<p></p>
 <?php		}
 ?>
-	<form autocomplete="off" name="editTTS" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" return editTTS_submit();">
+	<form class="popover-form" autocomplete="off" name="editTTS" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" return editTTS_submit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($ttsid ? 'edit' : 'add') ?>">
 	<table>

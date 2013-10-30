@@ -28,5 +28,10 @@
 		2.10.0.1 Security update; downstream changes
 		*2.10.0.0* version bump
 	</changelog>
+	<popovers>
+		<tts>
+			<display>tts</display>
+		</tts>
+	</popovers>
 	<md5sum>6f068e44541e968f384aed7b95b096e4</md5sum>
 </module>
