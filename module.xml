@@ -28,4 +28,4 @@
 		*2.10.0.0* version bump
 	</changelog>
 	<md5sum>a9c1761acddcbaaa616763c02386e65e</md5sum>
-</module>
+<supported><version>2.11</version></supported></module>
