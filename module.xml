@@ -34,5 +34,8 @@
 			<display>tts</display>
 		</tts>
 	</popovers>
+	<supported>
+		<version>2.11</version>
+	</supported>
 	<md5sum>95e334009eb9d41adc63878fd307044c</md5sum>
 </module>
