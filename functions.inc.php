@@ -87,6 +87,14 @@ function tts_get_config($p_var) {
 	}
 }
 
+function tts_get_ttsengine_path($engine) {
+	if (function_exists('ttsengines_get_engine_path')) {
+		return ttsengines_get_engine_path($engine);
+	} else {
+		return "/invalid/filename";
+	}
+}
+
 function tts_list() {
 	global $db;
 	$sql = "SELECT id, name FROM tts ORDER BY name";

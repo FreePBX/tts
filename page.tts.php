@@ -13,6 +13,15 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed');}
 //GNU General Public License for more details.
 
 
+// This module REQUIRES the 'ttsengines' module. But as FreePBX
+// doesn't handle circular dependancies, we have to force one.
+// This is the one that's forced. Sorry.
+if (!function_exists('ttsengines_get_all_engines')) {
+	print "<h2>"._("Text To Speech")."<br/><hr></h2>";
+	print "<p>TTS Requires that the ttsmodules engines be installed, and it doesn't appear to be. Sorry!</p>";
+	return;
+}
+
 isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 isset($_REQUEST['id'])?$ttsid = $_REQUEST['id']:$ttsid='';
 
