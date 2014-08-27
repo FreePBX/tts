@@ -60,16 +60,16 @@ if (isset($tts_list)) {
 if ($action == 'delete') {
 	echo '<br><h3>'._("Text To Speech").' '.$ttsid.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
 } else {
-	if ($ttsid){ 
+	if ($ttsid){
 		//get details for this tts text
 		$thisTTS = tts_get($ttsid);
 		//create variables
 		extract($thisTTS);
 	}
-	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
+	$delURL = '?'.$_SERVER['QUERY_STRING'].'&action=delete';
 ?>
 
-	
+
 <?php		if ($ttsid){ ?>
 	<h2><?php echo _("Text To Speech").": ". $name; ?></h2>
 	<p><a href="<?php echo $delURL ?>"><?php echo _("Delete text to speech")?> '<?php echo $name; ?>'</a><i style='font-size: x-small'>(<?php echo _("Note, does not delete the files from the server.")?><?php echo $tts_astsnd_path; ?>)</i></p>
@@ -78,7 +78,7 @@ if ($action == 'delete') {
 	<p></p>
 <?php		}
 ?>
-	<form class="popover-form" autocomplete="off" name="editTTS" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" return editTTS_submit();">
+	<form class="popover-form" autocomplete="off" name="editTTS" action="" method="post" return editTTS_submit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($ttsid ? 'edit' : 'add') ?>">
 	<table>
@@ -103,7 +103,7 @@ if ($action == 'delete') {
 			<select name="engine">
 				<?php
 					$engines = ttsengines_get_all_engines();
-	
+
 					foreach ($engines as $engine)
 					{
 						if ($engine['name'] == $thisTTS['engine'])
@@ -133,7 +133,7 @@ if (isset($thisTTS)) {
 }
 ?>
 	<tr>
-		<td colspan="2"><br><h6><input name="Submit" type="submit" <?php echo (isset($tts_agi_error) ? 'disabled="disabled"' : ''); ?> value="<?php echo _("Submit Changes")?>"></h6></td>		
+		<td colspan="2"><br><h6><input name="Submit" type="submit" <?php echo (isset($tts_agi_error) ? 'disabled="disabled"' : ''); ?> value="<?php echo _("Submit Changes")?>"></h6></td>
 	</tr>
 	</table>
 <script language="javascript">
@@ -156,6 +156,6 @@ function editTTS_submit()
 //-->
 </script>
 	</form>
-<?php		
+<?php
 } //end if action == delGRP
 ?>
