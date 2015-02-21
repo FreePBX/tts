@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:11-0500\n"
+"POT-Creation-Date: 2015-02-20 20:04-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,86 +17,97 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /usr/src/freepbx/tts/functions.inc.php:18
+#: functions.inc.php:18
 msgid "AGI script not found"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:49 /usr/src/freepbx/tts/page.tts.php:77
+#: page.tts.php:49 /usr/src/freepbx/tts/page.tts.php:77
 msgid "Add a Text To Speech item"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:126
+#: page.tts.php:126
 msgid "After the Text To Speech was played go to"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:100
+#: tts.i18n.php:5
+msgid ""
+"Allows you to configure text to speech, and is derived from texttospeech "
+"provided in contributed modules."
+msgstr ""
+
+#: tts.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: page.tts.php:100
 msgid "Choose an engine"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:75
+#: page.tts.php:75
 msgid "Delete text to speech"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:94
+#: page.tts.php:94
 msgid "Enter the text you want to synthetize."
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:90
+#: page.tts.php:90
 msgid "Give this TTS Destination a brief name to help you identify it."
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:100
+#: page.tts.php:100
 msgid ""
 "List of TTS engines detected on the server. Choose the one you want to use "
 "for the current sentence."
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:85
+#: page.tts.php:85
 msgid "Main settings"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:90
+#: page.tts.php:90
 msgid "Name"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:75
+#: page.tts.php:75
 msgid "Note, does not delete the files from the server."
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:136
+#: page.tts.php:136
 msgid "Submit Changes"
 msgstr ""
 
-#: /usr/src/freepbx/tts/install.php:12
+#: install.php:12
 msgid "TTS AGI install failed. Module not usable."
 msgstr ""
 
-#: /usr/src/freepbx/tts/uninstall.php:14
+#: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:98
+#: page.tts.php:98
 msgid "TTS Engine"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:94
+#: page.tts.php:94
 msgid "Text"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:12 /usr/src/freepbx/tts/page.tts.php:61
-#: /usr/src/freepbx/tts/page.tts.php:74
+#: page.tts.php:12 /usr/src/freepbx/tts/page.tts.php:61
+#: page.tts.php:74 /usr/src/freepbx/tts/tts.i18n.php:3
+#: tts.i18n.php:6
 msgid "Text To Speech"
 msgstr ""
 
-#: /usr/src/freepbx/tts/functions.inc.php:46
+#: functions.inc.php:46
 #, php-format
 msgid "Text to Speech: %s"
 msgstr ""
 
-#: /usr/src/freepbx/tts/functions.inc.php:115
+#: functions.inc.php:115
 msgid "This name already exists"
 msgstr ""
 
-#: /usr/src/freepbx/tts/page.tts.php:61
+#: page.tts.php:61
 msgid "deleted"
 msgstr ""

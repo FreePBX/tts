@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:11-0500\n"
+"POT-Creation-Date: 2015-02-20 20:04-0500\n"
 "PO-Revision-Date: 2014-08-14 01:26+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/tts/ja/>\n"
@@ -48,35 +48,47 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#: /usr/src/freepbx/tts/functions.inc.php:18
+#: functions.inc.php:18
 msgid "AGI script not found"
 msgstr "AGIスクリプトが見つかりません"
 
-#: /usr/src/freepbx/tts/page.tts.php:49 /usr/src/freepbx/tts/page.tts.php:77
+#: page.tts.php:49 /usr/src/freepbx/tts/page.tts.php:77
 msgid "Add a Text To Speech item"
 msgstr "TTSアイテムを追加"
 
-#: /usr/src/freepbx/tts/page.tts.php:126
+#: page.tts.php:126
 msgid "After the Text To Speech was played go to"
 msgstr "TTSを再生後、次の場所に移動："
 
-#: /usr/src/freepbx/tts/page.tts.php:100
+#: tts.i18n.php:5
+msgid ""
+"Allows you to configure text to speech, and is derived from texttospeech "
+"provided in contributed modules."
+msgstr ""
+"TTSの設定を可能にし、また提供されたモジュールによってこれをtexttospeech から"
+"生成する。"
+
+#: tts.i18n.php:4
+msgid "Applications"
+msgstr "アプリケーション"
+
+#: page.tts.php:100
 msgid "Choose an engine"
 msgstr "エンジンを選択してください"
 
-#: /usr/src/freepbx/tts/page.tts.php:75
+#: page.tts.php:75
 msgid "Delete text to speech"
 msgstr "TTSを削除"
 
-#: /usr/src/freepbx/tts/page.tts.php:94
+#: page.tts.php:94
 msgid "Enter the text you want to synthetize."
 msgstr "読み上げるテキストを入力してください、"
 
-#: /usr/src/freepbx/tts/page.tts.php:90
+#: page.tts.php:90
 msgid "Give this TTS Destination a brief name to help you identify it."
 msgstr "このTTS宛先に名前を付けます。"
 
-#: /usr/src/freepbx/tts/page.tts.php:100
+#: page.tts.php:100
 msgid ""
 "List of TTS engines detected on the server. Choose the one you want to use "
 "for the current sentence."
@@ -84,62 +96,52 @@ msgstr ""
 "サーバー内に検出されたTTSエンジンのリストです。この文章に対して使用したいエン"
 "ジンを選択してください。"
 
-#: /usr/src/freepbx/tts/page.tts.php:85
+#: page.tts.php:85
 msgid "Main settings"
 msgstr "主要設定"
 
-#: /usr/src/freepbx/tts/page.tts.php:90
+#: page.tts.php:90
 msgid "Name"
 msgstr "名前"
 
-#: /usr/src/freepbx/tts/page.tts.php:75
+#: page.tts.php:75
 msgid "Note, does not delete the files from the server."
 msgstr "注意：サーバーからファイルを削除しません。"
 
-#: /usr/src/freepbx/tts/page.tts.php:136
+#: page.tts.php:136
 msgid "Submit Changes"
 msgstr "変更を適用"
 
-#: /usr/src/freepbx/tts/install.php:12
+#: install.php:12
 msgid "TTS AGI install failed. Module not usable."
 msgstr "TTS AGIのインストールが失敗しました。使用できないモジュールです。"
 
-#: /usr/src/freepbx/tts/uninstall.php:14
+#: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
 msgstr "TTS AGIスクリプトは削除できませんでした。"
 
-#: /usr/src/freepbx/tts/page.tts.php:98
+#: page.tts.php:98
 msgid "TTS Engine"
 msgstr "TTSエンジン"
 
-#: /usr/src/freepbx/tts/page.tts.php:94
+#: page.tts.php:94
 msgid "Text"
 msgstr "テキスト"
 
-#: /usr/src/freepbx/tts/page.tts.php:12 /usr/src/freepbx/tts/page.tts.php:61
-#: /usr/src/freepbx/tts/page.tts.php:74
+#: page.tts.php:12 /usr/src/freepbx/tts/page.tts.php:61 page.tts.php:74
+#: /usr/src/freepbx/tts/tts.i18n.php:3 tts.i18n.php:6
 msgid "Text To Speech"
 msgstr "音声読み上げ（TTS）"
 
-#: /usr/src/freepbx/tts/functions.inc.php:46
+#: functions.inc.php:46
 #, php-format
 msgid "Text to Speech: %s"
 msgstr "TTS: %s"
 
-#: /usr/src/freepbx/tts/functions.inc.php:115
+#: functions.inc.php:115
 msgid "This name already exists"
 msgstr "この名前はすでに存在します"
 
-#: /usr/src/freepbx/tts/page.tts.php:61
+#: page.tts.php:61
 msgid "deleted"
 msgstr "削除されました"
-
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
-
-#~ msgid ""
-#~ "Allows you to configure text to speech, and is derived from texttospeech "
-#~ "provided in contributed modules."
-#~ msgstr ""
-#~ "TTSの設定を可能にし、また提供されたモジュールによってこれをtexttospeech か"
-#~ "ら生成する。"
