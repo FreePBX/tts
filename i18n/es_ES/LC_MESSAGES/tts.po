@@ -10,13 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 20:04-0500\n"
-"PO-Revision-Date: 2015-02-20 20:04-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-03-26 01:08+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/tts/es_ES/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: functions.inc.php:18
 msgid "AGI script not found"
@@ -38,7 +41,7 @@ msgstr ""
 
 #: tts.i18n.php:4
 msgid "Applications"
-msgstr ""
+msgstr "Aplicaciones"
 
 #: page.tts.php:100
 msgid "Choose an engine"
@@ -76,7 +79,7 @@ msgstr ""
 
 #: page.tts.php:136
 msgid "Submit Changes"
-msgstr ""
+msgstr "Enviar Cambios"
 
 #: install.php:12
 msgid "TTS AGI install failed. Module not usable."
@@ -110,4 +113,4 @@ msgstr ""
 
 #: page.tts.php:61
 msgid "deleted"
-msgstr ""
+msgstr "eliminado"
