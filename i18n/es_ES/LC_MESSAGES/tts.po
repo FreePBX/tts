@@ -71,7 +71,7 @@ msgstr ""
 
 #: page.tts.php:90
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: page.tts.php:75
 msgid "Note, does not delete the files from the server."
