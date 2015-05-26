@@ -5,157 +5,74 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed');}
 //  Xavier Ourciere xourciere[at]propolys[dot]com
 //
 
-// This module REQUIRES the 'ttsengines' module. But as FreePBX
-// doesn't handle circular dependancies, we have to force one.
-// This is the one that's forced. Sorry.
+/**
+ * This module REQUIRES the 'ttsengines' module. But since FreePBX
+ *  doesn't handle circular dependancies, we have to force one.
+ */
 if (!function_exists('ttsengines_get_all_engines')) {
-	print "<h2>"._("Text To Speech")."<br/><hr></h2>";
-	print "<p>TTS Requires that the ttsmodules engines be installed, and it doesn't appear to be. Sorry!</p>";
+	show_view(__DIR__ . '/views/no-ttsengines');
 	return;
 }
 
-isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
-isset($_REQUEST['id'])?$ttsid = $_REQUEST['id']:$ttsid='';
+$request = array(
+	'action',
+	'id',
+	'goto0',
+	'name',
+	'text',
+	'engine',
+);
+$vars = array();
+$goto = null;
 
-if (isset($_REQUEST['goto0']) && isset($_REQUEST[$_REQUEST['goto0']."0"])) {
-	$goto = $_REQUEST[$_REQUEST['goto0']."0"];
-} else {
-	$goto = '';
+foreach($request as $key) {
+	$vars[$key] = isset($_REQUEST[$key]) ? $_REQUEST[$key] : null;
 }
 
-$dispnum = "tts"; //used for switch on config.php
+if (isset($vars['goto0']) && isset($_REQUEST[$vars['goto0']."0"])) {
+	$goto = $_REQUEST[$vars['goto0']."0"];
+}
 
-switch ($action) {
+switch ($vars['action']) {
 	case "add":
-		tts_add($_REQUEST['name'], $_REQUEST['text'], $goto, $_REQUEST['engine']);
+		$vars['id'] = tts_add($vars['name'], $vars['text'], $goto, $vars['engine']);
 		needreload();
 	break;
 	case "delete":
-		tts_del($ttsid);
+		tts_del($vars['id']);
+		$vars['id'] = null;
 		needreload();
 	break;
 	case "edit":
-		tts_update($ttsid, $_REQUEST['name'], $_REQUEST['text'], $goto, $_REQUEST['engine']);
+		tts_update($vars['id'], $vars['name'], $vars['text'], $goto, $_REQUEST['engine']);
 		needreload();
 	break;
 }
 
 //this function needs to be available to other modules (those that use goto destinations)
 //therefore we put it in globalfunctions.php
-$tts_list = tts_list();
-?>
-<div class="rnav">
-<ul>
-    <li><a id="<?php echo ($ttsid=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add a Text To Speech item")?></a></li>
-<?php
-if (isset($tts_list)) {
-	foreach ($tts_list as $item) {
-		echo "<li><a id=\"".($ttsid==$item['id'] ? 'current':'')."\" href=\"config.php?display=".urlencode($dispnum)."&id=".urlencode($item['id'])."\">{$item['name']}</a></li>";
+$data['tts_list'] = tts_list();
+$data['engine_list'] = ttsengines_get_all_engines();
+$data['action'] = $vars['action'];
+
+if ( (isset($amp_conf['ASTVARLIBDIR'])?$amp_conf['ASTVARLIBDIR']:'') == '') {
+	$astlib_path = "/var/lib/asterisk";
+} else {
+	$astlib_path = $amp_conf['ASTVARLIBDIR'];
+}
+$data['tts_astsnd_path'] = $astlib_path . "/sounds/tts/";
+
+$data['tts_agi_error'] = null;
+if (!($tts_agi = file_exists($astlib_path."/agi-bin/propolys-tts.agi"))) {
+	$data['tts_agi_error'] = _("AGI script not found");
+}
+
+if (!empty($vars['id']) || $action !== 'delete') {
+	$tts = tts_get($vars['id']);
+
+	foreach ($tts as $key => $value) {
+		$data[$key] = $value;
 	}
 }
-?>
-</ul>
-</div>
-<?php
-if ($action == 'delete') {
-	echo '<br><h3>'._("Text To Speech").' '.$ttsid.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
-} else {
-	if ($ttsid){
-		//get details for this tts text
-		$thisTTS = tts_get($ttsid);
-		//create variables
-		extract($thisTTS);
-	}
-	$delURL = '?'.$_SERVER['QUERY_STRING'].'&action=delete';
-?>
 
-
-<?php		if ($ttsid){ ?>
-	<h2><?php echo _("Text To Speech").": ". $name; ?></h2>
-	<p><a href="<?php echo $delURL ?>"><?php echo _("Delete text to speech")?> '<?php echo $name; ?>'</a><i style='font-size: x-small'>(<?php echo _("Note, does not delete the files from the server.")?><?php echo $tts_astsnd_path; ?>)</i></p>
-<?php		} else { ?>
-	<h2><?php echo _("Add a Text To Speech item"); ?></h2>
-	<p></p>
-<?php		}
-?>
-	<form class="popover-form" autocomplete="off" name="editTTS" action="" method="post" return editTTS_submit();">
-	<input type="hidden" name="display" value="<?php echo $dispnum?>">
-	<input type="hidden" name="action" value="<?php echo ($ttsid ? 'edit' : 'add') ?>">
-	<table>
-	<tr><td colspan="2"><h5><?php echo _("Main settings"); ?>:<hr></h5></td></tr>
-<?php		if ($ttsid){ ?>
-		<tr><td><input type="hidden" name="id" value="<?php echo $ttsid; ?>"></td></tr>
-<?php		} ?>
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Name")?>:<span><?php echo _("Give this TTS Destination a brief name to help you identify it.")?></span></a></td>
-		<td><input type="text" name="name" value="<?php echo (isset($name) ? $name : ''); ?>"></td>
-	</tr>
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Text")?>:<span><?php echo _("Enter the text you want to synthetize.")?></span></a></td>
-		<td><textarea name="text" cols=50 rows=5><?php echo (isset($text) ? $text : ''); ?></textarea></td>
-	</tr>
-
-	<tr><td colspan="2"><br><h5><?php echo _("TTS Engine")?>:<hr></h5></td></tr>
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Choose an engine")?>:<span><?php echo _("List of TTS engines detected on the server. Choose the one you want to use for the current sentence.")?></span></a></td>
-		<td>
-		<?php if( !isset($tts_agi_error) ) { ?>
-			<select name="engine">
-				<?php
-					$engines = ttsengines_get_all_engines();
-
-					foreach ($engines as $engine)
-					{
-						if ($engine['name'] == $thisTTS['engine'])
-						{
-							echo '<option value="' . $engine['name'] . '" selected=1>' . $engine['name'] . '</option>';
-						}
-						else
-						{
-							echo '<option value="' . $engine['name'] . '">' . $engine['name'] . '</option>';
-						}
-					}
-				?>
-			</select>
-		<?php } else { ?>
-			<i><?php echo $tts_agi_error; ?></i>
-		<?php } ?>
-		</td>
-	</tr>
-
-	<tr><td colspan="2"><br><h5><?php echo _("After the Text To Speech was played go to")?>:<hr></h5></td></tr>
-<?php
-//draw goto selects
-if (isset($thisTTS)) {
-	echo drawselects($thisTTS['goto'],0);
-} else {
-        echo drawselects(null, 0);
-}
-?>
-	<tr>
-		<td colspan="2"><br><h6><input name="Submit" type="submit" <?php echo (isset($tts_agi_error) ? 'disabled="disabled"' : ''); ?> value="<?php echo _("Submit Changes")?>"></h6></td>
-	</tr>
-	</table>
-<script language="javascript">
-<!--
-
-var theForm = document.editTTS;
-
-if (theForm.description.value == "") {
-	theForm.name.focus();
-} else {
-	theForm.text.focus();
-}
-
-function editTTS_submit()
-{
-	// No longer using this function, but saving it to convert for specific engines, if need be. (for example, if a "," should be replaced with "   "
-	return true;
-}
-
-//-->
-</script>
-	</form>
-<?php
-} //end if action == delGRP
-?>
+show_view(__DIR__ . '/views/tts.php', $data);

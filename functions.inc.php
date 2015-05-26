@@ -36,20 +36,20 @@ function tts_destinations() {
 
 function tts_getdestinfo($dest) {
 	global $amp_conf;
-    if (substr(trim($dest),0,8) == 'ext-tts,') {
-    	$tts = explode(',',$dest);
-        $tts = $tts[1];
-        $thistts = tts_get($tts);
-        if (empty($thistts)) {
-        	return array();
-        } else {
-            return array('description' => sprintf(_("Text to Speech: %s"),$thistts['name']),
-            	'edit_url' => 'config.php?display=tts&id='.urlencode($usr),
-            	);
-        }
+		if (substr(trim($dest),0,8) == 'ext-tts,') {
+			$tts = explode(',',$dest);
+				$tts = $tts[1];
+				$thistts = tts_get($tts);
+				if (empty($thistts)) {
+					return array();
+				} else {
+						return array('description' => sprintf(_("Text to Speech: %s"),$thistts['name']),
+							'edit_url' => 'config.php?display=tts&id='.urlencode($usr),
+							);
+				}
 	} else {
-    	return false;
-    }
+			return false;
+		}
 }
 
 function tts_get_config($p_var) {
@@ -88,6 +88,7 @@ function tts_get_ttsengine_path($engine) {
 
 function tts_list() {
 	global $db;
+	
 	$sql = "SELECT id, name FROM tts ORDER BY name";
 	$res = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($res)) {
@@ -98,6 +99,7 @@ function tts_list() {
 
 function tts_get($p_id) {
 	global $db;
+
 	$sql = "SELECT id, name, text, goto, engine FROM tts WHERE id=$p_id";
 	$res = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 	return $res;
@@ -108,6 +110,8 @@ function tts_del($p_id) {
 }
 
 function tts_add($p_name, $p_text, $p_goto, $p_engine) {
+	global $db;
+
 	$tts_list = tts_list();
 	if (is_array($tts_list)) {
 		foreach ($tts_list as $tts) {
@@ -118,6 +122,8 @@ function tts_add($p_name, $p_text, $p_goto, $p_engine) {
 		}
 	}
 	$results = sql("INSERT INTO tts SET name=".sql_formattext($p_name)." , text=".sql_formattext($p_text).", goto=".sql_formattext($p_goto).", engine=".sql_formattext($p_engine));
+
+	return $db->insert_id();
 }
 
 function tts_update($p_id, $p_name, $p_text, $p_goto, $p_engine) {

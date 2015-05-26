@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>2.11.0.10</version>
+	<version>13.0.1alpha1</version>
 	<repo>extended</repo>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
@@ -18,6 +18,7 @@
 	</depends>
 	<location>release/2.11/tts-2.11.0.7.tgz</location>
 	<changelog>
+		13.0.1alpha1 13 Visual Style Changes
 		2.11.0.10 Fix some xss
 		2.11.0.9 Fix issue when ttsengine broken/not installed causing crash.
 		2.11.0.8 Add license file
@@ -39,7 +40,7 @@
 		</tts>
 	</popovers>
 	<supported>
-		<version>2.11</version>
+		<version>13.0</version>
 	</supported>
 	<md5sum>95e334009eb9d41adc63878fd307044c</md5sum>
 </module>
