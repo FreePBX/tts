@@ -52,9 +52,7 @@
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="text"></i>
 											</div>
 											<div class="col-md-9">
-												<textarea name="text" class="form-control" cols=50 rows=5>
-													<?php echo (isset($text) ? $text : ''); ?>
-												</textarea>
+												<textarea name="text" class="form-control" cols=50 rows=5><?php echo (isset($text) ? $text : ''); ?></textarea>
 											</div>
 										</div>
 									</div>
