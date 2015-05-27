@@ -10,7 +10,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed');}
  *  doesn't handle circular dependancies, we have to force one.
  */
 if (!function_exists('ttsengines_get_all_engines')) {
-	show_view(__DIR__ . '/views/no-ttsengines');
+	show_view(__DIR__ . '/views/no-ttsengines.php');
 	return;
 }
 

@@ -26,6 +26,9 @@ class Tts extends \FreePBX_Helpers implements \BMO {
 	}
 	public function getActionBar($request) {
 		$buttons = array();
+		if (!function_exists('ttsengines_get_all_engines')) {
+				return $buttons;
+		}
 		switch($request['display']) {
 			case 'tts':
 				$buttons = array(
