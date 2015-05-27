@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-sm-9">
 			<?php
-				if ($id) {
+				if (!empty($id)) {
 			?>
 					<h2>
 						<?php echo _("Text To Speech").": ". $name; ?>
@@ -12,10 +12,11 @@
 			?>
 			<div class="fpbx-container">
 				<div class="display full-border">
-					<form class="fpbx-submit popover-form" autocomplete="off" name="editTTS" action="" method="post" data-fpbx-delete="config.php?display=tts&id=<?php echo $id; ?>&action=delete">
+					<form class="fpbx-submit popover-form" autocomplete="off" name="editTTS" action="" method="post"
+					<?php echo !empty($id) ? 'data-fpbx-delete="config.php?display=tts&id=<?php echo $id; ?>&action=delete"' : ''; ?>>
 					<input type="hidden" name="display" value="tts">
-					<input type="hidden" name="action" value="<?php echo ($id ? 'edit' : 'add') ?>">
-					<?php if ($id) { ?>
+					<input type="hidden" name="action" value="<?php echo (!empty($id) ? 'edit' : 'add') ?>">
+					<?php if (!empty($id)) { ?>
 						<input type="hidden" name="id" value="<?php echo $id; ?>">
 					<?php } ?>
 
@@ -84,7 +85,7 @@
 														<?php
 															foreach ($engine_list as $e)
 															{
-																if ($e['name'] == $engine) {
+																if ($e['name'] == $e) {
 																	echo '<option value="' . $e['name'] . '" selected=1>' . $e['name'] . '</option>';
 																} else {
 																	echo '<option value="' . $e['name'] . '">' . $e['name'] . '</option>';
@@ -140,7 +141,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-3 hidden-xs">
+		<div class="col-sm-3 hidden-xs bootnav">
 			<div class="list-group">
 				<a href="?display=tts" class="list-group-item <?php echo (empty($id)) ? 'active' : '';?>">
 					<?php echo _("Add a Text to Speech item"); ?>
@@ -149,7 +150,7 @@
 				if (isset($tts_list)) {
 					foreach ($tts_list as $item) {
 				?>
-						<a href="config.php?display=tts&id=<?php echo urlencode($item['id']);?>" class="list-group-item <?php echo ($id == $item['id']) ? 'active' : '';?>">
+						<a href="config.php?display=tts&id=<?php echo urlencode($item['id']);?>" class="list-group-item <?php echo (!empty($id) && $id == $item['id']) ? 'active' : '';?>">
 							<?php echo $item['name']; ?>
 						</a>
 				<?php
