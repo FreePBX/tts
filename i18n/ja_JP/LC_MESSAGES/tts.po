@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 20:04-0500\n"
+"POT-Creation-Date: 2015-05-27 11:05-0400\n"
 "PO-Revision-Date: 2014-08-14 01:26+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/tts/ja/>\n"
@@ -48,69 +48,66 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#: functions.inc.php:18
+#: functions.inc.php:18 page.tts.php:67
 msgid "AGI script not found"
 msgstr "AGIスクリプトが見つかりません"
 
-#: page.tts.php:49 /usr/src/freepbx/tts/page.tts.php:77
-msgid "Add a Text To Speech item"
-msgstr "TTSアイテムを追加"
-
-#: page.tts.php:126
-msgid "After the Text To Speech was played go to"
-msgstr "TTSを再生後、次の場所に移動："
-
-#: tts.i18n.php:5
-msgid ""
-"Allows you to configure text to speech, and is derived from texttospeech "
-"provided in contributed modules."
+#: views/tts.php:146
+msgid "Add a Text to Speech item"
 msgstr ""
-"TTSの設定を可能にし、また提供されたモジュールによってこれをtexttospeech から"
-"生成する。"
 
-#: tts.i18n.php:4
-msgid "Applications"
-msgstr "アプリケーション"
+#: views/tts.php:133
+msgid "After the Text to Speech was played go to"
+msgstr ""
 
-#: page.tts.php:100
-msgid "Choose an engine"
-msgstr "エンジンを選択してください"
+#: views/tts.php:78
+msgid "Choose an Engine"
+msgstr ""
 
-#: page.tts.php:75
-msgid "Delete text to speech"
-msgstr "TTSを削除"
+#: Tts.class.php:38
+msgid "Delete"
+msgstr ""
 
-#: page.tts.php:94
+#: views/tts.php:115
+msgid "Desintation"
+msgstr ""
+
+#: views/tts.php:63
 msgid "Enter the text you want to synthetize."
 msgstr "読み上げるテキストを入力してください、"
 
-#: page.tts.php:90
-msgid "Give this TTS Destination a brief name to help you identify it."
-msgstr "このTTS宛先に名前を付けます。"
+#: views/tts.php:41
+msgid "Give this TTS Destination a brief name to help you identify it"
+msgstr ""
 
-#: page.tts.php:100
+#: views/tts.php:105
 msgid ""
-"List of TTS engines detected on the server. Choose the one you want to use "
+"List of TTS engine detected on the server. Choose the one you want to use "
 "for the current sentence."
 msgstr ""
-"サーバー内に検出されたTTSエンジンのリストです。この文章に対して使用したいエン"
-"ジンを選択してください。"
 
-#: page.tts.php:85
+#: views/tts.php:23
 msgid "Main settings"
 msgstr "主要設定"
 
-#: page.tts.php:90
+#: views/tts.php:31
 msgid "Name"
 msgstr "名前"
 
-#: page.tts.php:75
-msgid "Note, does not delete the files from the server."
-msgstr "注意：サーバーからファイルを削除しません。"
+#: views/no-ttsengines.php:3
+#, php-format
+msgid ""
+"Please install the TTS Engines module via %s or run `fwconsole ma install "
+"ttsengines` from the CLI`"
+msgstr ""
 
-#: page.tts.php:136
-msgid "Submit Changes"
-msgstr "変更を適用"
+#: Tts.class.php:43
+msgid "Reset"
+msgstr ""
+
+#: Tts.class.php:48
+msgid "Submit"
+msgstr ""
 
 #: install.php:12
 msgid "TTS AGI install failed. Module not usable."
@@ -120,16 +117,19 @@ msgstr "TTS AGIのインストールが失敗しました。使用できない�
 msgid "TTS AGI script cannot be removed."
 msgstr "TTS AGIスクリプトは削除できませんでした。"
 
-#: page.tts.php:98
-msgid "TTS Engine"
-msgstr "TTSエンジン"
+#: views/tts.php:70
+msgid "TTS Engines"
+msgstr ""
 
-#: page.tts.php:94
+#: views/no-ttsengines.php:5
+msgid "TTS Engines Not Installed"
+msgstr ""
+
+#: views/tts.php:51
 msgid "Text"
 msgstr "テキスト"
 
-#: page.tts.php:12 /usr/src/freepbx/tts/page.tts.php:61 page.tts.php:74
-#: /usr/src/freepbx/tts/tts.i18n.php:3 tts.i18n.php:6
+#: views/tts.php:8
 msgid "Text To Speech"
 msgstr "音声読み上げ（TTS）"
 
@@ -138,10 +138,50 @@ msgstr "音声読み上げ（TTS）"
 msgid "Text to Speech: %s"
 msgstr "TTS: %s"
 
-#: functions.inc.php:115
+#: functions.inc.php:119
 msgid "This name already exists"
 msgstr "この名前はすでに存在します"
 
-#: page.tts.php:61
-msgid "deleted"
-msgstr "削除されました"
+#~ msgid "Add a Text To Speech item"
+#~ msgstr "TTSアイテムを追加"
+
+#~ msgid "After the Text To Speech was played go to"
+#~ msgstr "TTSを再生後、次の場所に移動："
+
+#~ msgid ""
+#~ "Allows you to configure text to speech, and is derived from texttospeech "
+#~ "provided in contributed modules."
+#~ msgstr ""
+#~ "TTSの設定を可能にし、また提供されたモジュールによってこれをtexttospeech か"
+#~ "ら生成する。"
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
+
+#~ msgid "Choose an engine"
+#~ msgstr "エンジンを選択してください"
+
+#~ msgid "Delete text to speech"
+#~ msgstr "TTSを削除"
+
+#~ msgid "Give this TTS Destination a brief name to help you identify it."
+#~ msgstr "このTTS宛先に名前を付けます。"
+
+#~ msgid ""
+#~ "List of TTS engines detected on the server. Choose the one you want to "
+#~ "use for the current sentence."
+#~ msgstr ""
+#~ "サーバー内に検出されたTTSエンジンのリストです。この文章に対して使用したい"
+#~ "エンジンを選択してください。"
+
+#~ msgid "Note, does not delete the files from the server."
+#~ msgstr "注意：サーバーからファイルを削除しません。"
+
+#~ msgid "Submit Changes"
+#~ msgstr "変更を適用"
+
+#~ msgid "TTS Engine"
+#~ msgstr "TTSエンジン"
+
+#~ msgid "deleted"
+#~ msgstr "削除されました"

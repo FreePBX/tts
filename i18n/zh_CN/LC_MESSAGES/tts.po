@@ -9,74 +9,75 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 20:04-0500\n"
+"POT-Creation-Date: 2015-05-27 11:05-0400\n"
 "PO-Revision-Date: 2015-02-20 20:04-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
-"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 
-#: functions.inc.php:18
+#: functions.inc.php:18 page.tts.php:67
 msgid "AGI script not found"
 msgstr "没有发现AGI脚本"
 
-#: page.tts.php:49 /usr/src/freepbx/tts/page.tts.php:77
-msgid "Add a Text To Speech item"
-msgstr "添加一个文本引擎"
+#: views/tts.php:146
+msgid "Add a Text to Speech item"
+msgstr ""
 
-#: page.tts.php:126
-msgid "After the Text To Speech was played go to"
-msgstr "TTS 后的处理"
+#: views/tts.php:133
+msgid "After the Text to Speech was played go to"
+msgstr ""
 
-#: tts.i18n.php:5
-msgid ""
-"Allows you to configure text to speech, and is derived from texttospeech "
-"provided in contributed modules."
-msgstr "支持配置TTS，来自于第三方提供的TTS。"
+#: views/tts.php:78
+msgid "Choose an Engine"
+msgstr ""
 
-#: tts.i18n.php:4
-msgid "Applications"
-msgstr "应用"
+#: Tts.class.php:38
+msgid "Delete"
+msgstr ""
 
-#: page.tts.php:100
-msgid "Choose an engine"
-msgstr "选择一个引擎"
+#: views/tts.php:115
+msgid "Desintation"
+msgstr ""
 
-#: page.tts.php:75
-msgid "Delete text to speech"
-msgstr "删除文本语音"
-
-#: page.tts.php:94
+#: views/tts.php:63
 msgid "Enter the text you want to synthetize."
 msgstr "输入需要合成的文本。"
 
-#: page.tts.php:90
-msgid "Give this TTS Destination a brief name to help you identify it."
-msgstr "设置一个TTS 目的地名称以便确认。"
+#: views/tts.php:41
+msgid "Give this TTS Destination a brief name to help you identify it"
+msgstr ""
 
-#: page.tts.php:100
+#: views/tts.php:105
 msgid ""
-"List of TTS engines detected on the server. Choose the one you want to use "
+"List of TTS engine detected on the server. Choose the one you want to use "
 "for the current sentence."
-msgstr "系统检测到的TTS引擎列表。选择其中一个来支持当前的句子。"
+msgstr ""
 
-#: page.tts.php:85
+#: views/tts.php:23
 msgid "Main settings"
 msgstr "主要设置"
 
-#: page.tts.php:90
+#: views/tts.php:31
 msgid "Name"
 msgstr "名称"
 
-#: page.tts.php:75
-msgid "Note, does not delete the files from the server."
-msgstr "注意，不能从服务器端删除文件。"
+#: views/no-ttsengines.php:3
+#, php-format
+msgid ""
+"Please install the TTS Engines module via %s or run `fwconsole ma install "
+"ttsengines` from the CLI`"
+msgstr ""
 
-#: page.tts.php:136
-msgid "Submit Changes"
-msgstr "提交修改"
+#: Tts.class.php:43
+msgid "Reset"
+msgstr ""
+
+#: Tts.class.php:48
+msgid "Submit"
+msgstr ""
 
 #: install.php:12
 msgid "TTS AGI install failed. Module not usable."
@@ -86,16 +87,19 @@ msgstr "TTS AGI 安装失败。模块不能使用。"
 msgid "TTS AGI script cannot be removed."
 msgstr "TTS AGI 基本不能删除。"
 
-#: page.tts.php:98
-msgid "TTS Engine"
-msgstr "TTS 引擎"
+#: views/tts.php:70
+msgid "TTS Engines"
+msgstr ""
 
-#: page.tts.php:94
+#: views/no-ttsengines.php:5
+msgid "TTS Engines Not Installed"
+msgstr ""
+
+#: views/tts.php:51
 msgid "Text"
 msgstr "文本"
 
-#: page.tts.php:12 /usr/src/freepbx/tts/page.tts.php:61 page.tts.php:74
-#: /usr/src/freepbx/tts/tts.i18n.php:3 tts.i18n.php:6
+#: views/tts.php:8
 msgid "Text To Speech"
 msgstr "文本语音"
 
@@ -104,10 +108,46 @@ msgstr "文本语音"
 msgid "Text to Speech: %s"
 msgstr "TTS: %s"
 
-#: functions.inc.php:115
+#: functions.inc.php:119
 msgid "This name already exists"
 msgstr "名称已存在"
 
-#: page.tts.php:61
-msgid "deleted"
-msgstr "删除"
+#~ msgid "Add a Text To Speech item"
+#~ msgstr "添加一个文本引擎"
+
+#~ msgid "After the Text To Speech was played go to"
+#~ msgstr "TTS 后的处理"
+
+#~ msgid ""
+#~ "Allows you to configure text to speech, and is derived from texttospeech "
+#~ "provided in contributed modules."
+#~ msgstr "支持配置TTS，来自于第三方提供的TTS。"
+
+#~ msgid "Applications"
+#~ msgstr "应用"
+
+#~ msgid "Choose an engine"
+#~ msgstr "选择一个引擎"
+
+#~ msgid "Delete text to speech"
+#~ msgstr "删除文本语音"
+
+#~ msgid "Give this TTS Destination a brief name to help you identify it."
+#~ msgstr "设置一个TTS 目的地名称以便确认。"
+
+#~ msgid ""
+#~ "List of TTS engines detected on the server. Choose the one you want to "
+#~ "use for the current sentence."
+#~ msgstr "系统检测到的TTS引擎列表。选择其中一个来支持当前的句子。"
+
+#~ msgid "Note, does not delete the files from the server."
+#~ msgstr "注意，不能从服务器端删除文件。"
+
+#~ msgid "Submit Changes"
+#~ msgstr "提交修改"
+
+#~ msgid "TTS Engine"
+#~ msgstr "TTS 引擎"
+
+#~ msgid "deleted"
+#~ msgstr "删除"
