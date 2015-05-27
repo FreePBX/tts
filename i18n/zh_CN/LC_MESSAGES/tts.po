@@ -1,0 +1,113 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for tts
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-20 20:04-0500\n"
+"PO-Revision-Date: 2015-02-20 20:04-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.inc.php:18
+msgid "AGI script not found"
+msgstr "没有发现AGI脚本"
+
+#: page.tts.php:49 /usr/src/freepbx/tts/page.tts.php:77
+msgid "Add a Text To Speech item"
+msgstr "添加一个文本引擎"
+
+#: page.tts.php:126
+msgid "After the Text To Speech was played go to"
+msgstr "TTS 后的处理"
+
+#: tts.i18n.php:5
+msgid ""
+"Allows you to configure text to speech, and is derived from texttospeech "
+"provided in contributed modules."
+msgstr "支持配置TTS，来自于第三方提供的TTS。"
+
+#: tts.i18n.php:4
+msgid "Applications"
+msgstr "应用"
+
+#: page.tts.php:100
+msgid "Choose an engine"
+msgstr "选择一个引擎"
+
+#: page.tts.php:75
+msgid "Delete text to speech"
+msgstr "删除文本语音"
+
+#: page.tts.php:94
+msgid "Enter the text you want to synthetize."
+msgstr "输入需要合成的文本。"
+
+#: page.tts.php:90
+msgid "Give this TTS Destination a brief name to help you identify it."
+msgstr "设置一个TTS 目的地名称以便确认。"
+
+#: page.tts.php:100
+msgid ""
+"List of TTS engines detected on the server. Choose the one you want to use "
+"for the current sentence."
+msgstr "系统检测到的TTS引擎列表。选择其中一个来支持当前的句子。"
+
+#: page.tts.php:85
+msgid "Main settings"
+msgstr "主要设置"
+
+#: page.tts.php:90
+msgid "Name"
+msgstr "名称"
+
+#: page.tts.php:75
+msgid "Note, does not delete the files from the server."
+msgstr "注意，不能从服务器端删除文件。"
+
+#: page.tts.php:136
+msgid "Submit Changes"
+msgstr "提交修改"
+
+#: install.php:12
+msgid "TTS AGI install failed. Module not usable."
+msgstr "TTS AGI 安装失败。模块不能使用。"
+
+#: uninstall.php:14
+msgid "TTS AGI script cannot be removed."
+msgstr "TTS AGI 基本不能删除。"
+
+#: page.tts.php:98
+msgid "TTS Engine"
+msgstr "TTS 引擎"
+
+#: page.tts.php:94
+msgid "Text"
+msgstr "文本"
+
+#: page.tts.php:12 /usr/src/freepbx/tts/page.tts.php:61 page.tts.php:74
+#: /usr/src/freepbx/tts/tts.i18n.php:3 tts.i18n.php:6
+msgid "Text To Speech"
+msgstr "文本语音"
+
+#: functions.inc.php:46
+#, php-format
+msgid "Text to Speech: %s"
+msgstr "TTS: %s"
+
+#: functions.inc.php:115
+msgid "This name already exists"
+msgstr "名称已存在"
+
+#: page.tts.php:61
+msgid "deleted"
+msgstr "删除"

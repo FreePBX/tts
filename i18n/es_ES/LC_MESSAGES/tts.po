@@ -1,0 +1,121 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for tts
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-20 20:04-0500\n"
+"PO-Revision-Date: 2015-03-31 08:26+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/tts/es_ES/>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
+
+#: functions.inc.php:18
+msgid "AGI script not found"
+msgstr "No se encontró el Script AGI"
+
+#: page.tts.php:49 /usr/src/freepbx/tts/page.tts.php:77
+msgid "Add a Text To Speech item"
+msgstr "Añadir un Texto a elemento hablado"
+
+#: page.tts.php:126
+msgid "After the Text To Speech was played go to"
+msgstr "Después de que el \"texto a hablado\" sea reproducido ir a"
+
+#: tts.i18n.php:5
+msgid ""
+"Allows you to configure text to speech, and is derived from texttospeech "
+"provided in contributed modules."
+msgstr ""
+"Le permite configurar \"testo a hablado\", y es derivado de texttospeech "
+"provisto en módulos contribuidos."
+
+#: tts.i18n.php:4
+msgid "Applications"
+msgstr "Aplicaciones"
+
+#: page.tts.php:100
+msgid "Choose an engine"
+msgstr "Escoger un \"motor\""
+
+#: page.tts.php:75
+msgid "Delete text to speech"
+msgstr "Eliminar \"texto a hablado\""
+
+#: page.tts.php:94
+msgid "Enter the text you want to synthetize."
+msgstr "Introduzca el texto que desea sintetizar."
+
+#: page.tts.php:90
+msgid "Give this TTS Destination a brief name to help you identify it."
+msgstr ""
+"Asígnele al Destino de TTS un nombre breve para ayudarle a identificarlo."
+
+#: page.tts.php:100
+msgid ""
+"List of TTS engines detected on the server. Choose the one you want to use "
+"for the current sentence."
+msgstr ""
+"Lista de los \"motores\" TTS detectados en el servidor. Escoja el que usted "
+"desea usar para la sentencia actual."
+
+#: page.tts.php:85
+msgid "Main settings"
+msgstr "Configuración Principal"
+
+#: page.tts.php:90
+msgid "Name"
+msgstr "Nombre"
+
+#: page.tts.php:75
+msgid "Note, does not delete the files from the server."
+msgstr "Note, no elimine los archivos del servidor."
+
+#: page.tts.php:136
+msgid "Submit Changes"
+msgstr "Enviar Cambios"
+
+#: install.php:12
+msgid "TTS AGI install failed. Module not usable."
+msgstr "Instalación fallida de TTS AGI. Modulo no es usable."
+
+#: uninstall.php:14
+msgid "TTS AGI script cannot be removed."
+msgstr "El script TTS AGI no puede ser removido."
+
+#: page.tts.php:98
+msgid "TTS Engine"
+msgstr "Motor TTS"
+
+#: page.tts.php:94
+msgid "Text"
+msgstr "Texto"
+
+#: page.tts.php:12 /usr/src/freepbx/tts/page.tts.php:61 page.tts.php:74
+#: /usr/src/freepbx/tts/tts.i18n.php:3 tts.i18n.php:6
+msgid "Text To Speech"
+msgstr "Texto a Hablado"
+
+#: functions.inc.php:46
+#, php-format
+msgid "Text to Speech: %s"
+msgstr "Texto a Hablado: %s"
+
+#: functions.inc.php:115
+msgid "This name already exists"
+msgstr "Este nombre ya existe"
+
+#: page.tts.php:61
+msgid "deleted"
+msgstr "eliminado"
