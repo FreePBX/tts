@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-27 11:05-0400\n"
+"POT-Creation-Date: 2015-06-19 18:52-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,15 +22,15 @@ msgstr ""
 msgid "AGI script not found"
 msgstr ""
 
-#: views/tts.php:146
+#: views/tts.php:147
 msgid "Add a Text to Speech item"
 msgstr ""
 
-#: views/tts.php:133
+#: views/tts.php:134
 msgid "After the Text to Speech was played go to"
 msgstr ""
 
-#: views/tts.php:78
+#: views/tts.php:79
 msgid "Choose an Engine"
 msgstr ""
 
@@ -38,29 +38,29 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/tts.php:115
+#: views/tts.php:116
 msgid "Desintation"
 msgstr ""
 
-#: views/tts.php:63
+#: views/tts.php:64
 msgid "Enter the text you want to synthetize."
 msgstr ""
 
-#: views/tts.php:41
+#: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
 msgstr ""
 
-#: views/tts.php:105
+#: views/tts.php:106
 msgid ""
 "List of TTS engine detected on the server. Choose the one you want to use "
 "for the current sentence."
 msgstr ""
 
-#: views/tts.php:23
+#: views/tts.php:24
 msgid "Main settings"
 msgstr ""
 
-#: views/tts.php:31
+#: views/tts.php:32
 msgid "Name"
 msgstr ""
 
@@ -87,7 +87,7 @@ msgstr ""
 msgid "TTS AGI script cannot be removed."
 msgstr ""
 
-#: views/tts.php:70
+#: views/tts.php:71
 msgid "TTS Engines"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgstr ""
 msgid "TTS Engines Not Installed"
 msgstr ""
 
-#: views/tts.php:51
+#: views/tts.php:52
 msgid "Text"
 msgstr ""
 
