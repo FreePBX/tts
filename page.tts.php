@@ -14,46 +14,13 @@ if (!function_exists('ttsengines_get_all_engines')) {
 	return;
 }
 
-$request = array(
-	'action',
-	'id',
-	'goto0',
-	'name',
-	'text',
-	'engine',
-);
-$vars = array();
-$goto = null;
 
-foreach($request as $key) {
-	$vars[$key] = isset($_REQUEST[$key]) ? $_REQUEST[$key] : null;
-}
-
-if (isset($vars['goto0']) && isset($_REQUEST[$vars['goto0']."0"])) {
-	$goto = $_REQUEST[$vars['goto0']."0"];
-}
-
-switch ($vars['action']) {
-	case "add":
-		$vars['id'] = tts_add($vars['name'], $vars['text'], $goto, $vars['engine']);
-		needreload();
-	break;
-	case "delete":
-		tts_del($vars['id']);
-		$vars['id'] = null;
-		needreload();
-	break;
-	case "edit":
-		tts_update($vars['id'], $vars['name'], $vars['text'], $goto, $_REQUEST['engine']);
-		needreload();
-	break;
-}
 
 //this function needs to be available to other modules (those that use goto destinations)
 //therefore we put it in globalfunctions.php
 $data['tts_list'] = tts_list();
 $data['engine_list'] = ttsengines_get_all_engines();
-$data['action'] = $vars['action'];
+$data['action'] = $_REQUEST['action'];
 
 if ( (isset($amp_conf['ASTVARLIBDIR'])?$amp_conf['ASTVARLIBDIR']:'') == '') {
 	$astlib_path = "/var/lib/asterisk";
@@ -67,8 +34,8 @@ if (!($tts_agi = file_exists($astlib_path."/agi-bin/propolys-tts.agi"))) {
 	$data['tts_agi_error'] = _("AGI script not found");
 }
 
-if (!empty($vars['id']) || $action !== 'delete') {
-	$tts = tts_get($vars['id']);
+if (!empty($_REQUEST['id']) || $action !== 'delete') {
+	$tts = tts_get($_REQUEST['id']);
 
 	foreach ($tts as $key => $value) {
 		$data[$key] = $value;

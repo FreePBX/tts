@@ -13,7 +13,7 @@
 			<div class="fpbx-container">
 				<div class="display full-border">
 					<form class="fpbx-submit popover-form" autocomplete="off" name="editTTS" action="" method="post"
-					<?php echo !empty($id) ? 'data-fpbx-delete="config.php?display=tts&id=<?php echo $id; ?>&action=delete"' : ''; ?>>
+					<?php echo !empty($id) ? 'data-fpbx-delete="config.php?display=tts&id='.$id.'&action=delete"' : ''; ?>>
 					<input type="hidden" name="display" value="tts">
 					<input type="hidden" name="action" value="<?php echo (!empty($id) ? 'edit' : 'add') ?>">
 					<?php if (!empty($id)) { ?>

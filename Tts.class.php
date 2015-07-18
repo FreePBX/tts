@@ -22,7 +22,40 @@ class Tts extends \FreePBX_Helpers implements \BMO {
 
 	}
 	public function doConfigPageInit() {
+		$request = array(
+			'action',
+			'id',
+			'goto0',
+			'name',
+			'text',
+			'engine',
+		);
+		$vars = array();
+		$goto = null;
 
+		foreach($request as $key) {
+			$vars[$key] = isset($_REQUEST[$key]) ? $_REQUEST[$key] : null;
+		}
+
+		if (isset($vars['goto0']) && isset($_REQUEST[$vars['goto0']."0"])) {
+			$goto = $_REQUEST[$vars['goto0']."0"];
+		}
+
+		switch ($vars['action']) {
+			case "add":
+				$_REQUEST['id'] = \tts_add($vars['name'], $vars['text'], $goto, $vars['engine']);
+				\needreload();
+			break;
+			case "delete":
+				\tts_del($vars['id']);
+				$_REQUEST['id'] = null;
+				\needreload();
+			break;
+			case "edit":
+				\tts_update($vars['id'], $vars['name'], $vars['text'], $goto, $_REQUEST['engine']);
+				\needreload();
+			break;
+		}
 	}
 	public function getActionBar($request) {
 		$buttons = array();

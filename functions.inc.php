@@ -88,7 +88,7 @@ function tts_get_ttsengine_path($engine) {
 
 function tts_list() {
 	global $db;
-	
+
 	$sql = "SELECT id, name FROM tts ORDER BY name";
 	$res = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($res)) {
@@ -106,7 +106,10 @@ function tts_get($p_id) {
 }
 
 function tts_del($p_id) {
-	$results = sql("DELETE FROM tts WHERE id=$p_id","query");
+	$dbh = \FreePBX::Database();
+	$sql = 'DELETE FROM tts WHERE id = ?';
+	$stmt = $dbh->prepare($sql);
+	return $stmt->execute(array($p_id));
 }
 
 function tts_add($p_name, $p_text, $p_goto, $p_engine) {
