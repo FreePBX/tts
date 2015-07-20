@@ -66,7 +66,7 @@ function tts_get_config($p_var) {
 					$ttstext = $tts['text'];
 					$ttsgoto = $tts['goto'];
 					$ttsengine = $tts['engine'];
-					$ttspath = ttsengines_get_engine_path($ttsengine);
+					$ttspath = tts_get_ttsengine_path($ttsengine);
 					$ext->add($contextname, $ttsid, '', new ext_noop('TTS: '.$ttsname));
 					$ext->add($contextname, $ttsid, '', new ext_noop('Using: '.$ttsengine));
 					$ext->add($contextname, $ttsid, '', new ext_answer());
