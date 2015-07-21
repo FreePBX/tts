@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 18:52-0400\n"
+"POT-Creation-Date: 2015-07-20 21:54-0400\n"
 "PO-Revision-Date: 2014-07-22 16:17+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/tts/bg/>\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#: functions.inc.php:18 page.tts.php:67
+#: functions.inc.php:18 page.tts.php:34
 msgid "AGI script not found"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Choose an Engine"
 msgstr ""
 
-#: Tts.class.php:38
+#: Tts.class.php:71
 msgid "Delete"
 msgstr ""
 
@@ -84,11 +84,11 @@ msgid ""
 "ttsengines` from the CLI`"
 msgstr ""
 
-#: Tts.class.php:43
+#: Tts.class.php:76
 msgid "Reset"
 msgstr ""
 
-#: Tts.class.php:48
+#: Tts.class.php:81
 msgid "Submit"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgstr "Текст към Говор"
 msgid "Text to Speech: %s"
 msgstr "Текст към Говор: %s"
 
-#: functions.inc.php:119
+#: functions.inc.php:122
 msgid "This name already exists"
 msgstr "Това име вече съществува"
 
