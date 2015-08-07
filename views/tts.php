@@ -32,7 +32,7 @@
 												<label class="control-label" for="name"><?php echo _("Name"); ?></label>
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="name"></i>
 											</div>
-											<div class="col-md-9"><input type="text" class="form-control" name="name" value="<?php echo (isset($name) ? $name : ''); ?>"></div>
+											<div class="col-md-9"><input type="text" class="form-control" name="name" value="<?php echo (isset($name) ? $name : ''); ?>" required></div>
 										</div>
 									</div>
 								</div>
@@ -53,7 +53,7 @@
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="text"></i>
 											</div>
 											<div class="col-md-9">
-												<textarea name="text" class="form-control" cols=50 rows=5><?php echo (isset($text) ? $text : ''); ?></textarea>
+												<textarea name="text" class="form-control" cols=50 rows=5 required><?php echo (isset($text) ? $text : ''); ?></textarea>
 											</div>
 										</div>
 									</div>
@@ -119,9 +119,9 @@
 											<div class="col-md-9">
 												<?php
 												if (isset($goto)) {
-													echo drawselects($goto,0);
+													echo drawselects($goto,0,false,true,null,true);
 												} else {
-													echo drawselects(null, 0);
+													echo drawselects(null, 0,false,true,null,true);
 												}
 												?>
 											</div>
@@ -141,7 +141,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-3 hidden-xs bootnav">
+		<div class="col-sm-3 bootnav">
 			<div class="list-group">
 				<a href="?display=tts" class="list-group-item <?php echo (empty($id)) ? 'active' : '';?>">
 					<?php echo _("Add a Text to Speech item"); ?>
