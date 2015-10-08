@@ -73,7 +73,7 @@ msgstr ""
 
 #: Tts.class.php:76
 msgid "Reset"
-msgstr ""
+msgstr "重新设置"
 
 #: Tts.class.php:81
 msgid "Submit"
