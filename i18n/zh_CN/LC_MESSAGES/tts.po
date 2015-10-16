@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-20 21:54-0400\n"
-"PO-Revision-Date: 2015-10-14 14:50+0200\n"
+"PO-Revision-Date: 2015-10-16 08:36+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese "
 "<http://weblate.freepbx.org/projects/freepbx/tts/zh_CN/>\n"
@@ -80,7 +80,7 @@ msgstr "重新设置"
 
 #: Tts.class.php:81
 msgid "Submit"
-msgstr ""
+msgstr "提交"
 
 #: install.php:12
 msgid "TTS AGI install failed. Module not usable."
