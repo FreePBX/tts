@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-20 21:54-0400\n"
-"PO-Revision-Date: 2015-10-16 08:36+0200\n"
+"PO-Revision-Date: 2015-10-19 14:40+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese "
 "<http://weblate.freepbx.org/projects/freepbx/tts/zh_CN/>\n"
@@ -76,7 +76,7 @@ msgstr ""
 
 #: Tts.class.php:76
 msgid "Reset"
-msgstr "重新设置"
+msgstr "重设"
 
 #: Tts.class.php:81
 msgid "Submit"
