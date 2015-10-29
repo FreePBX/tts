@@ -1,6 +1,6 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-sm-9">
+		<div class="col-sm-12">
 			<?php
 				if (!empty($id)) {
 			?>
@@ -139,24 +139,6 @@
 					<?php //END TTS Engines ?>
 					</form>
 				</div>
-			</div>
-		</div>
-		<div class="col-sm-3 bootnav">
-			<div class="list-group">
-				<a href="?display=tts" class="list-group-item <?php echo (empty($id)) ? 'active' : '';?>">
-					<?php echo _("Add a Text to Speech item"); ?>
-				</a>
-				<?php
-				if (isset($tts_list)) {
-					foreach ($tts_list as $item) {
-				?>
-						<a href="config.php?display=tts&id=<?php echo urlencode($item['id']);?>" class="list-group-item <?php echo (!empty($id) && $id == $item['id']) ? 'active' : '';?>">
-							<?php echo $item['name']; ?>
-						</a>
-				<?php
-					}
-				}
-				?>
 			</div>
 		</div>
 	</div>

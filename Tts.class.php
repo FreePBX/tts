@@ -57,6 +57,16 @@ class Tts extends \FreePBX_Helpers implements \BMO {
 			break;
 		}
 	}
+	public function listTTS(){
+		$sql = "SELECT id, name FROM tts ORDER BY name";
+		$stmt = $this->db->prepare($sql);
+		$stmt->execute();
+		$res = $stmt->fetchall(\PDO::FETCH_ASSOC);
+		if(!$res) {
+			return array();
+		}
+		return $res;
+	}
 	public function getActionBar($request) {
 		$buttons = array();
 		if (!function_exists('ttsengines_get_all_engines')) {
@@ -88,4 +98,36 @@ class Tts extends \FreePBX_Helpers implements \BMO {
 			break;
 		}
 	}
+	public function getRightNav($request) {
+	  return load_view(__DIR__."/views/rnav.php",array());
+	}
+	public function ajaxRequest($req, &$setting) {
+		switch ($req) {
+			case 'getJSON':
+				return true;
+			break;
+			default:
+				return false;
+			break;
+		}
+	}
+	public function ajaxHandler(){
+		switch ($_REQUEST['command']) {
+			case 'getJSON':
+				switch ($_REQUEST['jdata']) {
+					case 'grid':
+						return array_values($this->listTTS());
+					break;
+
+					default:
+						return false;
+					break;
+				}
+			break;
+
+			default:
+				return false;
+			break;
+		}
+}
 }
