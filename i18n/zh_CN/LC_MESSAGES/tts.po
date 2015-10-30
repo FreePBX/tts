@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-20 21:54-0400\n"
+"POT-Creation-Date: 2015-10-29 18:49-0700\n"
 "PO-Revision-Date: 2015-10-19 14:40+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
-"Language-Team: Simplified Chinese "
-"<http://weblate.freepbx.org/projects/freepbx/tts/zh_CN/>\n"
-"Language: zh_CN\n"
+"Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
+"freepbx/tts/zh_CN/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -25,8 +25,8 @@ msgstr ""
 msgid "AGI script not found"
 msgstr "没有发现AGI脚本"
 
-#: views/tts.php:147
-msgid "Add a Text to Speech item"
+#: views/rnav.php:2
+msgid "Add TTS"
 msgstr ""
 
 #: views/tts.php:134
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Choose an Engine"
 msgstr ""
 
-#: Tts.class.php:71
+#: Tts.class.php:81
 msgid "Delete"
 msgstr "删除"
 
@@ -74,13 +74,17 @@ msgid ""
 "ttsengines` from the CLI`"
 msgstr ""
 
-#: Tts.class.php:76
+#: Tts.class.php:86
 msgid "Reset"
 msgstr "重设"
 
-#: Tts.class.php:81
+#: Tts.class.php:91
 msgid "Submit"
 msgstr "提交"
+
+#: views/rnav.php:7
+msgid "TTS"
+msgstr ""
 
 #: install.php:12
 msgid "TTS AGI install failed. Module not usable."
@@ -111,7 +115,7 @@ msgstr "文本语音"
 msgid "Text to Speech: %s"
 msgstr "TTS: %s"
 
-#: functions.inc.php:122
+#: functions.inc.php:116
 msgid "This name already exists"
 msgstr "名称已存在"
 
