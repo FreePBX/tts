@@ -131,7 +131,7 @@ msgstr "名称已存在"
 #~ msgstr "支持配置TTS，来自于第三方提供的TTS。"
 
 #~ msgid "Applications"
-#~ msgstr "应用"
+#~ msgstr "应用配置"
 
 #~ msgid "Choose an engine"
 #~ msgstr "选择一个引擎"
@@ -157,4 +157,4 @@ msgstr "名称已存在"
 #~ msgstr "TTS 引擎"
 
 #~ msgid "deleted"
-#~ msgstr "删除"
+#~ msgstr "已删除"
