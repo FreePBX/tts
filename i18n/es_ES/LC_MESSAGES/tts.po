@@ -39,7 +39,7 @@ msgstr ""
 
 #: Tts.class.php:81
 msgid "Delete"
-msgstr ""
+msgstr "Eliminar"
 
 #: views/tts.php:116
 msgid "Desintation"
@@ -80,7 +80,7 @@ msgstr ""
 
 #: Tts.class.php:91
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: views/rnav.php:7
 msgid "TTS"
