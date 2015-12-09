@@ -156,7 +156,7 @@ msgstr "Este nombre ya existe"
 #~ msgstr "Note, no elimine los archivos del servidor."
 
 #~ msgid "Submit Changes"
-#~ msgstr "Enviar cambios"
+#~ msgstr "Enviar Cambios"
 
 #~ msgid "TTS Engine"
 #~ msgstr "Motor TTS"
