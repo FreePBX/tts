@@ -162,4 +162,4 @@ msgstr "Este nombre ya existe"
 #~ msgstr "Motor TTS"
 
 #~ msgid "deleted"
-#~ msgstr "eliminada."
+#~ msgstr "eliminado"
