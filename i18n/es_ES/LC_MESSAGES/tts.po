@@ -76,7 +76,7 @@ msgstr ""
 
 #: Tts.class.php:86
 msgid "Reset"
-msgstr ""
+msgstr "Restaura"
 
 #: Tts.class.php:91
 msgid "Submit"
