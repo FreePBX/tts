@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>13.0.5</version>
+	<version>13.0.6</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -19,6 +19,7 @@
 	</depends>
 	<location>release/2.11/tts-2.11.0.7.tgz</location>
 	<changelog>
+		*13.0.6* Undefined variable
 		*13.0.5* Slideout menu
 		*13.0.4* FREEPBX-9940 Form Validation
 		*13.0.3* fixes apply conf
