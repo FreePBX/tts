@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:49-0700\n"
+"POT-Creation-Date: 2016-01-07 11:02-0800\n"
 "PO-Revision-Date: 2015-10-27 08:43+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -60,6 +60,18 @@ msgstr ""
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
 msgstr ""
+
+#: tts.i18n.php:8
+msgid ""
+"Allows you to configure text to speech, and is derived from texttospeech "
+"provided in contributed modules."
+msgstr ""
+"TTSの設定を可能にし、また提供されたモジュールによってこれをtexttospeech から"
+"生成する。"
+
+#: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
+msgid "Applications"
+msgstr "アプリケーション"
 
 #: views/tts.php:79
 msgid "Choose an Engine"
@@ -134,7 +146,7 @@ msgstr ""
 msgid "Text"
 msgstr "テキスト"
 
-#: views/tts.php:8
+#: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
 msgstr "音声読み上げ（TTS）"
 
@@ -152,16 +164,6 @@ msgstr "この名前はすでに存在します"
 
 #~ msgid "After the Text To Speech was played go to"
 #~ msgstr "TTSを再生後、次の場所に移動："
-
-#~ msgid ""
-#~ "Allows you to configure text to speech, and is derived from texttospeech "
-#~ "provided in contributed modules."
-#~ msgstr ""
-#~ "TTSの設定を可能にし、また提供されたモジュールによってこれをtexttospeech か"
-#~ "ら生成する。"
-
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
 
 #~ msgid "Choose an engine"
 #~ msgstr "エンジンを選択してください"

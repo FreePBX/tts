@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for tts
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:49-0700\n"
+"POT-Creation-Date: 2016-01-07 11:02-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,16 @@ msgstr ""
 
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
+msgstr ""
+
+#: tts.i18n.php:8
+msgid ""
+"Allows you to configure text to speech, and is derived from texttospeech "
+"provided in contributed modules."
+msgstr ""
+
+#: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
+msgid "Applications"
 msgstr ""
 
 #: views/tts.php:79
@@ -103,6 +113,7 @@ msgstr ""
 msgid "Text"
 msgstr ""
 
+#: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10
 #: views/tts.php:8
 msgid "Text To Speech"
 msgstr ""

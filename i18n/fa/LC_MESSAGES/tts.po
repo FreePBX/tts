@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:49-0700\n"
+"POT-Creation-Date: 2016-01-07 11:02-0800\n"
 "PO-Revision-Date: 2015-10-16 20:54+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/tts/fa/"
@@ -32,6 +32,16 @@ msgstr ""
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
 msgstr "پس از اجرای تبدیل متن به گفتار برود به"
+
+#: tts.i18n.php:8
+msgid ""
+"Allows you to configure text to speech, and is derived from texttospeech "
+"provided in contributed modules."
+msgstr ""
+
+#: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
+msgid "Applications"
+msgstr ""
 
 #: views/tts.php:79
 msgid "Choose an Engine"
@@ -108,7 +118,7 @@ msgstr "موتورهای TTS نصب نشده اند"
 msgid "Text"
 msgstr "متن"
 
-#: views/tts.php:8
+#: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
 msgstr "متن به گفتار"
 
