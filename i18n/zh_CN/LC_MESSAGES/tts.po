@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:49-0700\n"
-"PO-Revision-Date: 2015-10-19 14:40+0200\n"
+"PO-Revision-Date: 2015-11-17 12:22+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
-"Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
-"freepbx/tts/zh_CN/>\n"
+"Language-Team: Simplified Chinese "
+"<http://weblate.freepbx.org/projects/freepbx/tts/zh_CN/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -76,7 +76,7 @@ msgstr ""
 
 #: Tts.class.php:86
 msgid "Reset"
-msgstr "重设"
+msgstr "重置"
 
 #: Tts.class.php:91
 msgid "Submit"
@@ -131,7 +131,7 @@ msgstr "名称已存在"
 #~ msgstr "支持配置TTS，来自于第三方提供的TTS。"
 
 #~ msgid "Applications"
-#~ msgstr "应用"
+#~ msgstr "应用配置"
 
 #~ msgid "Choose an engine"
 #~ msgstr "选择一个引擎"
@@ -157,4 +157,4 @@ msgstr "名称已存在"
 #~ msgstr "TTS 引擎"
 
 #~ msgid "deleted"
-#~ msgstr "删除"
+#~ msgstr "已删除"
