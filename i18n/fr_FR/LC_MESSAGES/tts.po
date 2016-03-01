@@ -3,27 +3,27 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for tts
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-07 11:02-0800\n"
-"PO-Revision-Date: 2016-01-14 22:56+0200\n"
-"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/tts/es_ES/>\n"
-"Language: es_ES\n"
+"PO-Revision-Date: 2016-02-04 23:02+0200\n"
+"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
+"Language-Team: French "
+"<http://weblate.freepbx.org/projects/freepbx/tts/fr_FR/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
 #: functions.inc.php:18 page.tts.php:34
 msgid "AGI script not found"
-msgstr "No se encontró el Script AGI"
+msgstr "Script AGI non trouvé"
 
 #: views/rnav.php:2
 msgid "Add TTS"
@@ -38,12 +38,10 @@ msgid ""
 "Allows you to configure text to speech, and is derived from texttospeech "
 "provided in contributed modules."
 msgstr ""
-"Le permite configurar \"testo a hablado\", y es derivado de texttospeech "
-"provisto en módulos contribuidos."
 
 #: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
 msgid "Applications"
-msgstr "Aplicaciones"
+msgstr "Applications"
 
 #: views/tts.php:79
 msgid "Choose an Engine"
@@ -51,7 +49,7 @@ msgstr ""
 
 #: Tts.class.php:81
 msgid "Delete"
-msgstr "Borrar"
+msgstr "Supprimer"
 
 #: views/tts.php:116
 msgid "Desintation"
@@ -59,7 +57,7 @@ msgstr ""
 
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
-msgstr "Introduzca el texto que desea sintetizar."
+msgstr ""
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
@@ -73,11 +71,11 @@ msgstr ""
 
 #: views/tts.php:24
 msgid "Main settings"
-msgstr "Configuración Principal"
+msgstr ""
 
 #: views/tts.php:32
 msgid "Name"
-msgstr "Nombre"
+msgstr "Nom"
 
 #: views/no-ttsengines.php:3
 #, php-format
@@ -88,11 +86,11 @@ msgstr ""
 
 #: Tts.class.php:86
 msgid "Reset"
-msgstr "Reiniciar"
+msgstr "Réinitialiser"
 
 #: Tts.class.php:91
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Soumettre"
 
 #: views/rnav.php:7
 msgid "TTS"
@@ -100,11 +98,11 @@ msgstr ""
 
 #: install.php:12
 msgid "TTS AGI install failed. Module not usable."
-msgstr "Instalación fallida de TTS AGI. Modulo no es usable."
+msgstr ""
 
 #: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
-msgstr "El script TTS AGI no puede ser removido."
+msgstr ""
 
 #: views/tts.php:71
 msgid "TTS Engines"
@@ -116,52 +114,17 @@ msgstr ""
 
 #: views/tts.php:52
 msgid "Text"
-msgstr "Texto"
+msgstr ""
 
 #: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
-msgstr "Texto a Hablado"
+msgstr ""
 
 #: functions.inc.php:46
 #, php-format
 msgid "Text to Speech: %s"
-msgstr "Texto a Hablado: %s"
+msgstr ""
 
 #: functions.inc.php:116
 msgid "This name already exists"
-msgstr "Este nombre ya existe"
-
-#~ msgid "Add a Text To Speech item"
-#~ msgstr "Añadir un Texto a elemento hablado"
-
-#~ msgid "After the Text To Speech was played go to"
-#~ msgstr "Después de que el \"texto a hablado\" sea reproducido ir a"
-
-#~ msgid "Choose an engine"
-#~ msgstr "Escoger un \"motor\""
-
-#~ msgid "Delete text to speech"
-#~ msgstr "Eliminar \"texto a hablado\""
-
-#~ msgid "Give this TTS Destination a brief name to help you identify it."
-#~ msgstr ""
-#~ "Asígnele al Destino de TTS un nombre breve para ayudarle a identificarlo."
-
-#~ msgid ""
-#~ "List of TTS engines detected on the server. Choose the one you want to "
-#~ "use for the current sentence."
-#~ msgstr ""
-#~ "Lista de los \"motores\" TTS detectados en el servidor. Escoja el que "
-#~ "usted desea usar para la sentencia actual."
-
-#~ msgid "Note, does not delete the files from the server."
-#~ msgstr "Note, no elimine los archivos del servidor."
-
-#~ msgid "Submit Changes"
-#~ msgstr "Enviar cambios"
-
-#~ msgid "TTS Engine"
-#~ msgstr "Motor TTS"
-
-#~ msgid "deleted"
-#~ msgstr "eliminada"
+msgstr ""
