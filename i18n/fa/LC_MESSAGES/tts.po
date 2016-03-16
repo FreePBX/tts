@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-01 10:26-0800\n"
-"PO-Revision-Date: 2016-03-15 19:51+0300\n"
+"PO-Revision-Date: 2016-03-15 22:55+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/cel/fa/>"
+"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/tts/fa/>"
 "\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "اسکریپت AGI یافت نشد"
 
 #: views/rnav.php:2
 msgid "Add TTS"
-msgstr ""
+msgstr "افزودن متن به گفتار"
 
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
@@ -37,7 +37,7 @@ msgstr "پس از اجرای تبدیل متن به گفتار برود به"
 msgid ""
 "Allows you to configure text to speech, and is derived from texttospeech "
 "provided in contributed modules."
-msgstr ""
+msgstr "اجازه شما برای تنظیم متن به گفتار، فراهم شده توسط ماژول متن به گفتار."
 
 #: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
 msgid "Applications"
@@ -53,11 +53,11 @@ msgstr "حذف"
 
 #: views/tts.php:116
 msgid "Destintation"
-msgstr ""
+msgstr "مقصد"
 
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
-msgstr ""
+msgstr "ورود یک متن برای ترکیب."
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
@@ -85,6 +85,8 @@ msgid ""
 "Please install the TTS Engines module via %s or run `fwconsole ma install "
 "ttsengines` from the CLI`"
 msgstr ""
+"لطفا یک موتور  %s متن به گفتار نصب کنید ویا از طریق کنسول این موتور رانصب "
+"کنید"
 
 #: Tts.class.php:86
 msgid "Reset"
@@ -96,7 +98,7 @@ msgstr "ارسال"
 
 #: views/rnav.php:7
 msgid "TTS"
-msgstr ""
+msgstr "TTS"
 
 #: install.php:12
 msgid "TTS AGI install failed. Module not usable."
