@@ -3,75 +3,81 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for tts
-# Copyright (C) 2008-2016 Sangoma, Inc.
+# Copyright (C) 2008-2015 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-01 10:26-0800\n"
-"PO-Revision-Date: 2016-01-07 11:02-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-07-06 05:16+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian (Iran) "
+"<http://weblate.freepbx.org/projects/freepbx/tts/fa_IR/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: functions.inc.php:18 page.tts.php:34
 msgid "AGI script not found"
-msgstr ""
+msgstr "اسکریپت AGI یافت نشد"
 
 #: views/rnav.php:2
 msgid "Add TTS"
-msgstr ""
+msgstr "افزودن متن به گفتار"
 
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
-msgstr ""
+msgstr "پس از اجرای تبدیل متن به گفتار برود به"
 
 #: tts.i18n.php:8
 msgid ""
 "Allows you to configure text to speech, and is derived from texttospeech "
 "provided in contributed modules."
-msgstr ""
+msgstr "اجازه شما برای تنظیم متن به گفتار، فراهم شده توسط ماژول متن به گفتار."
 
 #: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "برنامه‌های کاربردی"
 
 #: views/tts.php:79
 msgid "Choose an Engine"
-msgstr ""
+msgstr "یک موتور انتخاب کن"
 
 #: Tts.class.php:81
 msgid "Delete"
-msgstr ""
+msgstr "حذف کردن"
 
 #: views/tts.php:116
 msgid "Destintation"
-msgstr ""
+msgstr "مقصد"
 
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
-msgstr ""
+msgstr "ورود یک متن برای ترکیب."
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
-msgstr ""
+msgstr "به مقصد TTS نام مشخصی دهید تا برای تشخیص آن به شما کمک کند"
 
 #: views/tts.php:106
 msgid ""
 "List of TTS engine detected on the server. Choose the one you want to use "
 "for the current sentence."
 msgstr ""
+"فهرست موتورهای TTC شناخته شده در سرور. موتوری که میخواهید برای این جمله "
+"استفاده کنید را انتخاب کنید."
 
 #: views/tts.php:24
 msgid "Main settings"
-msgstr ""
+msgstr "تنظیمات اصلی"
 
 #: views/tts.php:32
 msgid "Name"
-msgstr ""
+msgstr "نام"
 
 #: views/no-ttsengines.php:3
 #, php-format
@@ -79,48 +85,56 @@ msgid ""
 "Please install the TTS Engines module via %s or run `fwconsole ma install "
 "ttsengines` from the CLI`"
 msgstr ""
+"لطفا یک موتور  %s متن به گفتار نصب کنید ویا از طریق کنسول این موتور رانصب "
+"کنید"
 
 #: Tts.class.php:86
 msgid "Reset"
-msgstr ""
+msgstr "بازنشانی"
 
 #: Tts.class.php:91
 msgid "Submit"
-msgstr ""
+msgstr "ارسال"
 
 #: views/rnav.php:7
 msgid "TTS"
-msgstr ""
+msgstr "TTS"
 
 #: install.php:12
 msgid "TTS AGI install failed. Module not usable."
-msgstr ""
+msgstr "نصب TTS AGI ناموفق بود. ماژول غیرقابل استفاده است."
 
 #: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
-msgstr ""
+msgstr "اسکریپت TTS AGI نمیتواند حذف شود."
 
 #: views/tts.php:71
 msgid "TTS Engines"
-msgstr ""
+msgstr "موتورهای TTS"
 
 #: views/no-ttsengines.php:5
 msgid "TTS Engines Not Installed"
-msgstr ""
+msgstr "موتورهای TTS نصب نشده اند"
 
 #: views/tts.php:52
 msgid "Text"
-msgstr ""
+msgstr "متن"
 
 #: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
-msgstr ""
+msgstr "متن به گفتار"
 
 #: functions.inc.php:46
 #, php-format
 msgid "Text to Speech: %s"
-msgstr ""
+msgstr "متن به گفتار ：%s"
 
 #: functions.inc.php:116
 msgid "This name already exists"
-msgstr ""
+msgstr "این نام موجود است"
+
+#~ msgid "Desintation"
+#~ msgstr "مقصد"
+
+#~ msgid "Add a Text to Speech item"
+#~ msgstr "افزودن آیتم متن به گفتار"
