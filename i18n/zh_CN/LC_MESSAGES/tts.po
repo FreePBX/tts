@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-01 10:26-0800\n"
+"POT-Creation-Date: 2016-07-06 13:52-0700\n"
 "PO-Revision-Date: 2015-11-17 12:22+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -96,10 +96,6 @@ msgstr "提交"
 msgid "TTS"
 msgstr ""
 
-#: install.php:12
-msgid "TTS AGI install failed. Module not usable."
-msgstr "TTS AGI 安装失败。模块不能使用。"
-
 #: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
 msgstr "TTS AGI 基本不能删除。"
@@ -128,6 +124,9 @@ msgstr "TTS: %s"
 #: functions.inc.php:116
 msgid "This name already exists"
 msgstr "名称已存在"
+
+#~ msgid "TTS AGI install failed. Module not usable."
+#~ msgstr "TTS AGI 安装失败。模块不能使用。"
 
 #~ msgid "Add a Text To Speech item"
 #~ msgstr "添加一个文本引擎"
