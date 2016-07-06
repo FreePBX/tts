@@ -15,7 +15,7 @@
 	<depends>
 		<engine>asterisk ge 1.6</engine>
 		<module>ttsengines</module>
-		<version>13.0.6</version>
+		<version>13.0.154</version>
 	</depends>
 	<location>release/2.11/tts-2.11.0.7.tgz</location>
 	<changelog>
