@@ -85,8 +85,8 @@
 														<?php
 															foreach ($engine_list as $e)
 															{
-																if ($e['name'] == $e) {
-																	echo '<option value="' . $e['name'] . '" selected=1>' . $e['name'] . '</option>';
+																if ($e['name'] == $engine) {
+																	echo '<option value="' . $e['name'] . '" selected>' . $e['name'] . '</option>';
 																} else {
 																	echo '<option value="' . $e['name'] . '">' . $e['name'] . '</option>';
 																}
