@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-06 13:52-0700\n"
-"PO-Revision-Date: 2016-08-11 19:34+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"PO-Revision-Date: 2016-10-08 12:16+0200\n"
+"Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) "
 "<http://weblate.freepbx.org/projects/freepbx/tts/fa_IR/>\n"
 "Language: fa_IR\n"
@@ -49,7 +49,7 @@ msgstr "یک موتور انتخاب کن"
 
 #: Tts.class.php:81
 msgid "Delete"
-msgstr "حذف کردن"
+msgstr "حذف"
 
 #: views/tts.php:116
 msgid "Destintation"
@@ -94,7 +94,7 @@ msgstr "بازنشانی"
 
 #: Tts.class.php:91
 msgid "Submit"
-msgstr "ارسال"
+msgstr "ثبت"
 
 #: views/rnav.php:7
 msgid "TTS"
