@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-06 13:52-0700\n"
-"PO-Revision-Date: 2016-11-22 22:56+0200\n"
+"PO-Revision-Date: 2016-11-25 04:11+0200\n"
 "Last-Translator: Pascal <pascal.noyel@ipexia.com>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/tts/fr_FR/>\n"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: Tts.class.php:86
 msgid "Reset"
-msgstr "Remise à Zero"
+msgstr "Remise à zéro"
 
 #: Tts.class.php:91
 msgid "Submit"
