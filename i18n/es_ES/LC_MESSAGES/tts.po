@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-06 13:52-0700\n"
-"PO-Revision-Date: 2016-12-10 22:37+0200\n"
+"PO-Revision-Date: 2016-12-11 06:15+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/tts/es_ES/>\n"
@@ -27,11 +27,11 @@ msgstr "No se encontró el Script AGI"
 
 #: views/rnav.php:2
 msgid "Add TTS"
-msgstr ""
+msgstr "Agregar TTS"
 
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
-msgstr ""
+msgstr "Después de reproducir el texto a voz, vaya a"
 
 #: tts.i18n.php:8
 msgid ""
@@ -47,7 +47,7 @@ msgstr "Aplicaciones"
 
 #: views/tts.php:79
 msgid "Choose an Engine"
-msgstr ""
+msgstr "Escoger un Motor"
 
 #: Tts.class.php:81
 msgid "Delete"
@@ -55,7 +55,7 @@ msgstr "Borrar"
 
 #: views/tts.php:116
 msgid "Destintation"
-msgstr ""
+msgstr "Destino"
 
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
@@ -63,13 +63,15 @@ msgstr "Introduzca el texto que desea sintetizar."
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
-msgstr ""
+msgstr "Dé a este destino TTS un nombre breve para ayudarlo a identificarlo"
 
 #: views/tts.php:106
 msgid ""
 "List of TTS engine detected on the server. Choose the one you want to use "
 "for the current sentence."
 msgstr ""
+"Lista de motores TTS detectados en el servidor. Elija el que desee utilizar "
+"para la oración actual."
 
 #: views/tts.php:24
 msgid "Main settings"
@@ -85,10 +87,12 @@ msgid ""
 "Please install the TTS Engines module via %s or run `fwconsole ma install "
 "ttsengines` from the CLI`"
 msgstr ""
+"Instale el módulo de motores TTS a través de %s o ejecute `fwconsole ma "
+"install ttsengines` desde la CLI`"
 
 #: Tts.class.php:86
 msgid "Reset"
-msgstr "Reiniciar"
+msgstr "Reinicio"
 
 #: Tts.class.php:91
 msgid "Submit"
@@ -96,7 +100,7 @@ msgstr "Enviar"
 
 #: views/rnav.php:7
 msgid "TTS"
-msgstr ""
+msgstr "TTS"
 
 #: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
@@ -104,11 +108,11 @@ msgstr "El script TTS AGI no puede ser removido."
 
 #: views/tts.php:71
 msgid "TTS Engines"
-msgstr ""
+msgstr "Motores TTS"
 
 #: views/no-ttsengines.php:5
 msgid "TTS Engines Not Installed"
-msgstr ""
+msgstr "Motores TTS no instalados"
 
 #: views/tts.php:52
 msgid "Text"
