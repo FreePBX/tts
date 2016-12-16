@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-06 13:52-0700\n"
-"PO-Revision-Date: 2016-12-12 21:52+0200\n"
+"PO-Revision-Date: 2016-12-16 00:54+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/tts/pt_BR/>\n"
@@ -23,21 +23,23 @@ msgstr ""
 
 #: functions.inc.php:18 page.tts.php:34
 msgid "AGI script not found"
-msgstr ""
+msgstr "Script AGI não encontrado"
 
 #: views/rnav.php:2
 msgid "Add TTS"
-msgstr ""
+msgstr "Adicionar TTS"
 
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
-msgstr ""
+msgstr "Depois que o Texto em Voz for tocado vá para"
 
 #: tts.i18n.php:8
 msgid ""
 "Allows you to configure text to speech, and is derived from texttospeech "
 "provided in contributed modules."
 msgstr ""
+"Permite configurar o texto em voz, e é derivado de texttospeech fornecido em "
+"módulos contribuídos."
 
 #: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
 msgid "Applications"
@@ -45,7 +47,7 @@ msgstr "Aplicações"
 
 #: views/tts.php:79
 msgid "Choose an Engine"
-msgstr ""
+msgstr "Escolha um Mecanismo"
 
 #: Tts.class.php:81
 msgid "Delete"
@@ -53,25 +55,28 @@ msgstr "Apagar"
 
 #: views/tts.php:116
 msgid "Destintation"
-msgstr ""
+msgstr "Destino"
 
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
-msgstr ""
+msgstr "Digite o texto que deseja sintetizar."
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
 msgstr ""
+"Dê a este destino TTS(texto em voz) um breve nome para ajudar a identificá-lo"
 
 #: views/tts.php:106
 msgid ""
 "List of TTS engine detected on the server. Choose the one you want to use "
 "for the current sentence."
 msgstr ""
+"Lista de Mecanismos Texto em Voz detectados neste servidor. Escolha o que "
+"você deseja usar para a frase atual."
 
 #: views/tts.php:24
 msgid "Main settings"
-msgstr ""
+msgstr "Configuração Principal"
 
 #: views/tts.php:32
 msgid "Name"
@@ -83,6 +88,8 @@ msgid ""
 "Please install the TTS Engines module via %s or run `fwconsole ma install "
 "ttsengines` from the CLI`"
 msgstr ""
+"Instale o módulo Mecanismos de Texto em Voz através de %s ou execute `"
+"fwconsole ma install ttsengines` a partir do CLI`"
 
 #: Tts.class.php:86
 msgid "Reset"
@@ -94,33 +101,33 @@ msgstr "Enviar"
 
 #: views/rnav.php:7
 msgid "TTS"
-msgstr ""
+msgstr "Texto em Voz"
 
 #: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
-msgstr ""
+msgstr "O script AGI de Texto em Voz não pode ser removido."
 
 #: views/tts.php:71
 msgid "TTS Engines"
-msgstr ""
+msgstr "Mecanismos de Texto em Voz"
 
 #: views/no-ttsengines.php:5
 msgid "TTS Engines Not Installed"
-msgstr ""
+msgstr "Mecanismos de Texto em Voz Não Instalados"
 
 #: views/tts.php:52
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
-msgstr ""
+msgstr "Texto em Voz"
 
 #: functions.inc.php:46
 #, php-format
 msgid "Text to Speech: %s"
-msgstr ""
+msgstr "Texto em Voz: %s"
 
 #: functions.inc.php:116
 msgid "This name already exists"
-msgstr ""
+msgstr "Este nome já existe"
