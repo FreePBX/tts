@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-06 13:52-0700\n"
-"PO-Revision-Date: 2016-12-16 00:54+0200\n"
+"PO-Revision-Date: 2016-12-16 00:55+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/tts/pt_BR/>\n"
@@ -27,7 +27,7 @@ msgstr "Script AGI não encontrado"
 
 #: views/rnav.php:2
 msgid "Add TTS"
-msgstr "Adicionar TTS"
+msgstr "Adicionar Texto em Voz"
 
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
@@ -64,7 +64,7 @@ msgstr "Digite o texto que deseja sintetizar."
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
 msgstr ""
-"Dê a este destino TTS(texto em voz) um breve nome para ajudar a identificá-lo"
+"Dê a este destino Texto em Voz um breve nome para ajudar a identificá-lo"
 
 #: views/tts.php:106
 msgid ""
