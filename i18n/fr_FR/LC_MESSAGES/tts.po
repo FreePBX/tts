@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-06 13:52-0700\n"
-"PO-Revision-Date: 2016-11-25 04:11+0200\n"
-"Last-Translator: Pascal <pascal.noyel@ipexia.com>\n"
+"PO-Revision-Date: 2017-03-05 21:14+0200\n"
+"Last-Translator: Francis <fbinet@solist.ca>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/tts/fr_FR/>\n"
 "Language: fr_FR\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Applications"
 
 #: views/tts.php:79
 msgid "Choose an Engine"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: Tts.class.php:81
 msgid "Delete"
-msgstr "Supprimer"
+msgstr "Supprime"
 
 #: views/tts.php:116
 msgid "Destintation"
