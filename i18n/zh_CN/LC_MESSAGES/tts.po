@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-06 13:52-0700\n"
+"POT-Creation-Date: 2017-05-23 17:31-0400\n"
 "PO-Revision-Date: 2015-11-17 12:22+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -39,7 +39,7 @@ msgid ""
 "provided in contributed modules."
 msgstr "支持配置TTS，来自于第三方提供的TTS。"
 
-#: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
+#: tts.i18n.php:6
 msgid "Applications"
 msgstr "应用配置"
 

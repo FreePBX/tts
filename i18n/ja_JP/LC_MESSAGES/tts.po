@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-06 13:52-0700\n"
+"POT-Creation-Date: 2017-05-23 17:31-0400\n"
 "PO-Revision-Date: 2015-10-27 08:43+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -69,7 +69,7 @@ msgstr ""
 "TTSの設定を可能にし、また提供されたモジュールによってこれをtexttospeech から"
 "生成する。"
 
-#: tts.i18n.php:6 /usr/src/freepbx/tts/tts.i18n.php:12
+#: tts.i18n.php:6
 msgid "Applications"
 msgstr "アプリケーション"
 
