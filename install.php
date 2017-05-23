@@ -1,18 +1,29 @@
 <?php
-if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed');}
+$table = \FreePBX::Database()->migrate("tts");
+$cols = array (
+	'id' => array (
+		'type' => 'integer',
+		'primaryKey' => true,
+		'autoincrement' => true,
+	),
+	'name' => array (
+		'type' => 'string',
+		'length' => '100',
+	),
+	'text' => array (
+		'type' => 'text',
+	),
+	'goto' => array (
+		'type' => 'string',
+		'length' => '50',
+		'notnull' => false,
+	),
+	'engine' => array (
+		'type' => 'string',
+		'length' => '50',
+		'notnull' => false,
+	),
+);
 
-$autoincrement = (($amp_conf["AMPDBENGINE"] == "sqlite") || ($amp_conf["AMPDBENGINE"] == "sqlite3")) ? "AUTOINCREMENT":"AUTO_INCREMENT";
-
-$sql = "CREATE TABLE IF NOT EXISTS tts (
-	id INTEGER NOT NULL $autoincrement,
-	name VARCHAR( 100 ) NOT NULL,
-	text VARCHAR( 250 ) NOT NULL,
-	goto VARCHAR( 50 ),
-	engine VARCHAR( 50 ),
-	PRIMARY KEY (id)
-	)";
-
-$result = $db->query($sql);
-if(DB::IsError($result)) {
-	die_freepbx($result->getDebugInfo());
-}
+$table->modify($cols);
+unset($table);
