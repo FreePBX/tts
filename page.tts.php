@@ -20,7 +20,7 @@ if (!function_exists('ttsengines_get_all_engines')) {
 //therefore we put it in globalfunctions.php
 $data['tts_list'] = tts_list();
 $data['engine_list'] = ttsengines_get_all_engines();
-$data['action'] = $_REQUEST['action'];
+$data['action'] = $_GET['action'];
 
 if ( (isset($amp_conf['ASTVARLIBDIR'])?$amp_conf['ASTVARLIBDIR']:'') == '') {
 	$astlib_path = "/var/lib/asterisk";
@@ -33,13 +33,14 @@ $data['tts_agi_error'] = null;
 if (!($tts_agi = file_exists($astlib_path."/agi-bin/propolys-tts.agi"))) {
 	$data['tts_agi_error'] = _("AGI script not found");
 }
-
-if (!empty($_REQUEST['id']) || $action !== 'delete') {
-	$tts = tts_get($_REQUEST['id']);
-
-	foreach ($tts as $key => $value) {
-		$data[$key] = $value;
+if($_GET['view'] == 'form'){
+	if (!empty($_GET['id']) || $action !== 'delete') {
+		$tts = tts_get($_REQUEST['id']);
+		foreach ($tts as $key => $value) {
+			$data[$key] = $value;
+		}
 	}
+	show_view(__DIR__ . '/views/tts.php', $data);
+}else{
+	show_view(__DIR__ . '/views/grid.php', $data);
 }
-
-show_view(__DIR__ . '/views/tts.php', $data);
