@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-23 17:31-0400\n"
+"POT-Creation-Date: 2017-06-05 13:24-0400\n"
 "PO-Revision-Date: 2016-12-11 06:15+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -25,7 +25,11 @@ msgstr ""
 msgid "AGI script not found"
 msgstr "No se encontró el Script AGI"
 
-#: views/rnav.php:2
+#: views/grid.php:10
+msgid "Actions"
+msgstr ""
+
+#: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
 msgid "Add TTS"
 msgstr "Agregar TTS"
 
@@ -57,6 +61,10 @@ msgstr "Borrar"
 msgid "Destintation"
 msgstr "Destino"
 
+#: views/grid.php:9
+msgid "Engine"
+msgstr ""
+
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
 msgstr "Introduzca el texto que desea sintetizar."
@@ -64,6 +72,10 @@ msgstr "Introduzca el texto que desea sintetizar."
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
 msgstr "Dé a este destino TTS un nombre breve para ayudarlo a identificarlo"
+
+#: views/rnav.php:3
+msgid "List TTS"
+msgstr ""
 
 #: views/tts.php:106
 msgid ""
@@ -77,7 +89,7 @@ msgstr ""
 msgid "Main settings"
 msgstr "Configuración Principal"
 
-#: views/tts.php:32
+#: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
 msgid "Name"
 msgstr "Nombre"
 
@@ -98,7 +110,7 @@ msgstr "Reinicio"
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/rnav.php:7
+#: views/rnav.php:8
 msgid "TTS"
 msgstr "TTS"
 
@@ -114,7 +126,7 @@ msgstr "Motores TTS"
 msgid "TTS Engines Not Installed"
 msgstr "Motores TTS no instalados"
 
-#: views/tts.php:52
+#: views/grid.php:8 /usr/src/freepbx/tts/views/tts.php:52
 msgid "Text"
 msgstr "Texto"
 

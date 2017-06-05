@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>13.0.9</version>
+	<version>13.0.10</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -19,6 +19,7 @@
 	</depends>
 	<location>release/2.11/tts-2.11.0.7.tgz</location>
 	<changelog>
+		*13.0.10* FREEPBX-14875 List entries option missing
 		*13.0.9* FREEPBX-14594 Allow longer text strings
 		*13.0.8* Fix select when editing to show correctly selected language, allow engines to detect sample rate on the fly
 		*13.0.7* FREEPBX-11558 Spelling fix

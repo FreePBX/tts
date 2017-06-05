@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-23 17:31-0400\n"
+"POT-Creation-Date: 2017-06-05 13:24-0400\n"
 "PO-Revision-Date: 2015-10-27 08:43+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -53,7 +53,11 @@ msgstr ""
 msgid "AGI script not found"
 msgstr "AGIスクリプトが見つかりません"
 
-#: views/rnav.php:2
+#: views/grid.php:10
+msgid "Actions"
+msgstr ""
+
+#: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
 msgid "Add TTS"
 msgstr ""
 
@@ -85,12 +89,20 @@ msgstr "削除"
 msgid "Destintation"
 msgstr ""
 
+#: views/grid.php:9
+msgid "Engine"
+msgstr ""
+
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
 msgstr "読み上げるテキストを入力してください、"
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
+msgstr ""
+
+#: views/rnav.php:3
+msgid "List TTS"
 msgstr ""
 
 #: views/tts.php:106
@@ -103,7 +115,7 @@ msgstr ""
 msgid "Main settings"
 msgstr "主要設定"
 
-#: views/tts.php:32
+#: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
 msgid "Name"
 msgstr "名前"
 
@@ -122,7 +134,7 @@ msgstr "リセット"
 msgid "Submit"
 msgstr "送信"
 
-#: views/rnav.php:7
+#: views/rnav.php:8
 msgid "TTS"
 msgstr ""
 
@@ -138,7 +150,7 @@ msgstr ""
 msgid "TTS Engines Not Installed"
 msgstr ""
 
-#: views/tts.php:52
+#: views/grid.php:8 /usr/src/freepbx/tts/views/tts.php:52
 msgid "Text"
 msgstr "テキスト"
 
