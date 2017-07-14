@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-05 13:24-0400\n"
-"PO-Revision-Date: 2017-07-13 16:13+0200\n"
+"PO-Revision-Date: 2017-07-14 09:01+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/tts/vi/>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: views/grid.php:10
 msgid "Actions"
-msgstr "Các tháo tác"
+msgstr "Các thao tác"
 
 #: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
 msgid "Add TTS"
