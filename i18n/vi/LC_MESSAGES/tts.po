@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-05 13:24-0400\n"
-"PO-Revision-Date: 2017-07-14 09:01+0200\n"
+"PO-Revision-Date: 2017-07-17 10:40+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/tts/vi/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: functions.inc.php:18 page.tts.php:34
 msgid "AGI script not found"
-msgstr ""
+msgstr "Không tìm thấy kịch bản AGI"
 
 #: views/grid.php:10
 msgid "Actions"
@@ -31,17 +31,19 @@ msgstr "Các thao tác"
 
 #: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
 msgid "Add TTS"
-msgstr ""
+msgstr "Thêm TTS"
 
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
-msgstr ""
+msgstr "Sau khi tính năng Text to Speech được bật thì đi tới"
 
 #: tts.i18n.php:8
 msgid ""
 "Allows you to configure text to speech, and is derived from texttospeech "
 "provided in contributed modules."
 msgstr ""
+"Cho phép bạn cấu hình tính năng Text To Speech, và được xuất ra từ "
+"texttospeech có trong các mô đun gộp."
 
 #: tts.i18n.php:6
 msgid "Applications"
@@ -49,7 +51,7 @@ msgstr "Các ứng dụng"
 
 #: views/tts.php:79
 msgid "Choose an Engine"
-msgstr ""
+msgstr "Chọn một Engine"
 
 #: Tts.class.php:81
 msgid "Delete"
@@ -57,33 +59,35 @@ msgstr "Xóa"
 
 #: views/tts.php:116
 msgid "Destintation"
-msgstr ""
+msgstr "Điểm đích"
 
 #: views/grid.php:9
 msgid "Engine"
-msgstr ""
+msgstr "Engine"
 
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
-msgstr ""
+msgstr "Nhập văn bản bạn muốn tổng hợp."
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
-msgstr ""
+msgstr "Đặt một tên cho điểm đích của SST này để bạn có thể nhận diện nó"
 
 #: views/rnav.php:3
 msgid "List TTS"
-msgstr ""
+msgstr "Danh sách TTS"
 
 #: views/tts.php:106
 msgid ""
 "List of TTS engine detected on the server. Choose the one you want to use "
 "for the current sentence."
 msgstr ""
+"Phát hiện danh sách máy tổng hợp giọng nói trên máy chủ. Chọn một máy có "
+"trong danh sách mà bạn muốn sử dụng cho câu hiện tại."
 
 #: views/tts.php:24
 msgid "Main settings"
-msgstr ""
+msgstr "Các cài đặt chính"
 
 #: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
 msgid "Name"
@@ -95,6 +99,8 @@ msgid ""
 "Please install the TTS Engines module via %s or run `fwconsole ma install "
 "ttsengines` from the CLI`"
 msgstr ""
+"Vui lòng cài đặt mô đun các máy tổng hợp giọng nói thông qua %s hoặc chạy `"
+"fwconsole ma install ttsengines`  từ CLI'"
 
 #: Tts.class.php:86
 msgid "Reset"
@@ -106,33 +112,33 @@ msgstr "Gửi đi"
 
 #: views/rnav.php:8
 msgid "TTS"
-msgstr ""
+msgstr "Text to Speech- Tính năng chuyển văn bản thành giọng nói"
 
 #: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
-msgstr ""
+msgstr "Không thể xóa kịch bản AGI của TTS."
 
 #: views/tts.php:71
 msgid "TTS Engines"
-msgstr ""
+msgstr "Máy tổng hợp giọng nói TTS"
 
 #: views/no-ttsengines.php:5
 msgid "TTS Engines Not Installed"
-msgstr ""
+msgstr "Không cài đặt được máy tổng hợp giọng nói"
 
 #: views/grid.php:8 /usr/src/freepbx/tts/views/tts.php:52
 msgid "Text"
-msgstr ""
+msgstr "Văn bản"
 
 #: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
-msgstr ""
+msgstr "Tính năng Text To Speech"
 
 #: functions.inc.php:46
 #, php-format
 msgid "Text to Speech: %s"
-msgstr ""
+msgstr "Tính năng Tex to Speech: %s"
 
 #: functions.inc.php:116
 msgid "This name already exists"
-msgstr ""
+msgstr "Tên này đã tồn tại"
