@@ -10,7 +10,7 @@
 	<description>Allows you to configure text to speech, and is derived from texttospeech provided in contributed modules.</description>
 	<category>Applications</category>
 	<menuitems>
-		<tts>Text To Speech</tts>
+		<tts needsenginedb="yes">Text To Speech</tts>
 	</menuitems>
 	<depends>
 		<engine>asterisk ge 1.6</engine>
