@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-05 13:24-0400\n"
-"PO-Revision-Date: 2018-02-16 17:00+0200\n"
+"PO-Revision-Date: 2018-02-16 20:01+0200\n"
 "Last-Translator: Nils <Nils@heckenkamp.info>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/tts/de_DE/>\n"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: views/no-ttsengines.php:3
 #, php-format
@@ -102,7 +102,7 @@ msgstr "Zurücksetzen"
 
 #: Tts.class.php:91
 msgid "Submit"
-msgstr "Bestätigen"
+msgstr "Absenden"
 
 #: views/rnav.php:8
 msgid "TTS"
