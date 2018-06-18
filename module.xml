@@ -1,11 +1,11 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>13.0.10</version>
+	<version>15.0.1</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
-	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<type>setup</type>
 	<description>Allows you to configure text to speech, and is derived from texttospeech provided in contributed modules.</description>
 	<category>Applications</category>
@@ -17,40 +17,24 @@
 		<module>ttsengines</module>
 		<version>13.0.154</version>
 	</depends>
-	<location>release/2.11/tts-2.11.0.7.tgz</location>
 	<changelog>
-		*13.0.10* FREEPBX-14875 List entries option missing
-		*13.0.9* FREEPBX-14594 Allow longer text strings
-		*13.0.8* Fix select when editing to show correctly selected language, allow engines to detect sample rate on the fly
-		*13.0.7* FREEPBX-11558 Spelling fix
-		*13.0.6* Undefined variable
-		*13.0.5* Slideout menu
-		*13.0.4* FREEPBX-9940 Form Validation
-		*13.0.3* fixes apply conf
-		*13.0.2* Version bump Beta
-		13.0.1alpha1 13 Visual Style Changes
-		2.11.0.10 Fix some xss
-		2.11.0.9 Fix issue when ttsengine broken/not installed causing crash.
-		2.11.0.8 Add license file
-		2.11.0.7 #6845 TTS should be popOver enabled and tested
-		2.11.0.6 #6846
-		2.11.0.5 #6454
-		2.11.0.4 depend on asterisk 1.6 or greater
-		2.11.0.3 Fixed primary key issue
-		2.11.0.2 re #6386 - correct typo in install.php so the sql query is run, also remove uninstall.sql and use uninstall.php
-		2.11.0.1 Fixes #6386, use install.php, remove install.sql. Return false on install if agi cant be installed
-		2.11.0.0 Re-categorize
-		2.10.0.2 Security update; downstream changes
-		2.10.0.1 Security update; downstream changes
-		*2.10.0.0* version bump
+		*15.0.1* branch to 15, Impliment backup 15.0
 	</changelog>
 	<popovers>
 		<tts>
 			<display>tts</display>
 		</tts>
 	</popovers>
+    <database>
+        <table name="tts">
+            <field name="id" type="integer" primarykey="true" autoincrement="true"/>
+            <field name="name" type="string" length="100"/>
+            <field name="text" type="text"/>
+            <field name="goto" type="string" length="50" notnull="false"/>
+            <field name="engine" type="string" length="50" notnull="false"/>
+        </table>
+    </database>
 	<supported>
-		<version>13.0</version>
+		<version>15.0</version>
 	</supported>
-	<md5sum>95e334009eb9d41adc63878fd307044c</md5sum>
 </module>

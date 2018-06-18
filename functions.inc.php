@@ -1,8 +1,11 @@
 <?php /* $Id: $ */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed');}
-//	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2013 Schmooze Com Inc.
-//  Xavier Ourciere xourciere[at]propolys[dot]com
+/**	
+ * License for all code of this FreePBX module can be found in the license file inside the module directory
+ * Copyright 2013 Schmooze Com Inc.
+ * Xavier Ourciere xourciere[at]propolys[dot]com
+ * Copytright 2018 Sangoma Technologies
+ **/
 
 if ( (isset($amp_conf['ASTVARLIBDIR'])?$amp_conf['ASTVARLIBDIR']:'') == '') {
 	$astlib_path = "/var/lib/asterisk";
@@ -11,10 +14,7 @@ if ( (isset($amp_conf['ASTVARLIBDIR'])?$amp_conf['ASTVARLIBDIR']:'') == '') {
 }
 $tts_astsnd_path = $astlib_path."/sounds/tts/";
 
-
-if ( $tts_agi = file_exists($astlib_path."/agi-bin/propolys-tts.agi") ) {
-	//tts_findengines();
-} else {
+if (!file_exists($astlib_path."/agi-bin/propolys-tts.agi") ) {
 	$tts_agi_error = _("AGI script not found");
 }
 
@@ -52,31 +52,6 @@ function tts_getdestinfo($dest) {
 		}
 }
 
-function tts_get_config($p_var) {
-	global $ext;
-
-	switch($p_var) {
-		case "asterisk":
-			$contextname = 'ext-tts';
-			if ( is_array($tts_list = \FreePBX::Tts()->listTTS()) ) {
-				foreach($tts_list as $item) {
-					$tts = tts_get($item['id']);
-					$ttsid = $tts['id'];
-					$ttsname= $tts['name'];
-					$ttstext = $tts['text'];
-					$ttsgoto = $tts['goto'];
-					$ttsengine = $tts['engine'];
-					$ttspath = tts_get_ttsengine_path($ttsengine);
-					$ext->add($contextname, $ttsid, '', new ext_noop('TTS: '.$ttsname));
-					$ext->add($contextname, $ttsid, '', new ext_noop('Using: '.$ttsengine));
-					$ext->add($contextname, $ttsid, '', new ext_answer());
-					$ext->add($contextname, $ttsid, '', new ext_agi('propolys-tts.agi,"'.$ttstext.'",'.$ttsengine.','.$ttspath['path']));
-					$ext->add($contextname, $ttsid, '', new ext_goto($ttsgoto));
-				}
-			}
-		break;
-	}
-}
 
 function tts_get_ttsengine_path($engine) {
 	if (function_exists('ttsengines_get_engine_path')) {
@@ -86,8 +61,8 @@ function tts_get_ttsengine_path($engine) {
 	}
 }
 
-function tts_list() {
-	dbug('tts_list has been moved in to BMO Tts->listTTS()');
+function tts_list() {  
+    FreePBX::Modules()->deprecatedFunction();
 	return \FreePBX::Tts()->listTTS();
 }
 
@@ -95,36 +70,21 @@ function tts_get($p_id) {
 	global $db;
 
 	$sql = "SELECT id, name, text, goto, engine FROM tts WHERE id=$p_id";
-	$res = $db->getRow($sql, DB_FETCHMODE_ASSOC);
-	return $res;
+	return $db->getRow($sql, DB_FETCHMODE_ASSOC);
 }
 
 function tts_del($p_id) {
-	$dbh = \FreePBX::Database();
-	$sql = 'DELETE FROM tts WHERE id = ?';
-	$stmt = $dbh->prepare($sql);
-	return $stmt->execute(array($p_id));
+    FreePBX::Modules()->deprecatedFunction();
+    return \FreePBX::Tts()->delete($p_id);
 }
 
 function tts_add($p_name, $p_text, $p_goto, $p_engine) {
-	global $db;
-
-	$tts_list = \FreePBX::Tts()->listTTS();
-	if (is_array($tts_list)) {
-		foreach ($tts_list as $tts) {
-			if ($tts['name'] === $p_name) {
-				echo "<script>javascript:alert('"._("This name already exists")."');</script>";
-				return false;
-			}
-		}
-	}
-	$results = sql("INSERT INTO tts SET name=".sql_formattext($p_name)." , text=".sql_formattext($p_text).", goto=".sql_formattext($p_goto).", engine=".sql_formattext($p_engine));
-
-	return $db->insert_id();
+    FreePBX::Modules()->deprecatedFunction();
+    return \FreePBX::Tts()->add($p_name, $p_text, $p_goto, $p_engine);
 }
 
 function tts_update($p_id, $p_name, $p_text, $p_goto, $p_engine) {
-	$results = sql("UPDATE tts SET name=".sql_formattext($p_name).", text=".sql_formattext($p_text).", goto=".sql_formattext($p_goto).", engine=".sql_formattext($p_engine)." WHERE id=".$p_id);
+    FreePBX::Modules()->deprecatedFunction();
+    return \FreePBX::Tts()->edit($p_id, $p_name, $p_text, $p_goto, $p_engine);
 }
 
-?>

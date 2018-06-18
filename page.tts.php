@@ -1,9 +1,11 @@
 <?php /* $Id: $ */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed');}
-//	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2013 Schmooze Com Inc.
-//  Xavier Ourciere xourciere[at]propolys[dot]com
-//
+/**	
+ * License for all code of this FreePBX module can be found in the license file inside the module directory
+ * Copyright 2013 Schmooze Com Inc.
+ * Xavier Ourciere xourciere[at]propolys[dot]com
+ * Copytright 2018 Sangoma Technologies
+**/
 
 /**
  * This module REQUIRES the 'ttsengines' module. But since FreePBX
