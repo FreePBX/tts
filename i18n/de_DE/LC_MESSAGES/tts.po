@@ -3,31 +3,31 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for tts
-# Copyright (C) 2008-2016 Sangoma, Inc.
+# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-05 13:24-0400\n"
-"PO-Revision-Date: 2017-12-11 22:57+0200\n"
-"Last-Translator: JCattan <jeremie@famillecattan.com>\n"
-"Language-Team: French "
-"<http://weblate.freepbx.org/projects/freepbx/tts/fr_FR/>\n"
-"Language: fr_FR\n"
+"PO-Revision-Date: 2018-02-16 20:01+0200\n"
+"Last-Translator: Nils <Nils@heckenkamp.info>\n"
+"Language-Team: German "
+"<http://weblate.freepbx.org/projects/freepbx/tts/de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
 #: functions.inc.php:18 page.tts.php:34
 msgid "AGI script not found"
-msgstr "Script AGI non trouvé"
+msgstr ""
 
 #: views/grid.php:10
 msgid "Actions"
-msgstr "Actions"
+msgstr "Aktionen"
 
 #: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
 msgid "Add TTS"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: tts.i18n.php:6
 msgid "Applications"
-msgstr "Applications"
+msgstr "Anwendungen"
 
 #: views/tts.php:79
 msgid "Choose an Engine"
@@ -53,11 +53,11 @@ msgstr ""
 
 #: Tts.class.php:81
 msgid "Delete"
-msgstr "Supprimer"
+msgstr "Löschen"
 
 #: views/tts.php:116
 msgid "Destintation"
-msgstr ""
+msgstr "Ziel"
 
 #: views/grid.php:9
 msgid "Engine"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
 msgid "Name"
-msgstr "Nom"
+msgstr "Name"
 
 #: views/no-ttsengines.php:3
 #, php-format
@@ -98,11 +98,11 @@ msgstr ""
 
 #: Tts.class.php:86
 msgid "Reset"
-msgstr "Reset"
+msgstr "Zurücksetzen"
 
 #: Tts.class.php:91
 msgid "Submit"
-msgstr "Envoyer"
+msgstr "Absenden"
 
 #: views/rnav.php:8
 msgid "TTS"
