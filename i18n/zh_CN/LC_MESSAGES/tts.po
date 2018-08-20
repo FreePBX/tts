@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 13:24-0400\n"
+"POT-Creation-Date: 2018-08-20 14:00-0400\n"
 "PO-Revision-Date: 2018-03-14 14:52+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
-"Language-Team: Simplified Chinese "
-"<http://weblate.freepbx.org/projects/freepbx/framework/zh_CN/>\n"
+"Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
+"freepbx/framework/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: functions.inc.php:18 page.tts.php:34
+#: functions.inc.php:18 page.tts.php:36
 msgid "AGI script not found"
 msgstr "没有发现AGI脚本"
 
@@ -51,7 +51,7 @@ msgstr "应用配置"
 msgid "Choose an Engine"
 msgstr ""
 
-#: Tts.class.php:81
+#: Tts.class.php:143
 msgid "Delete"
 msgstr "删除"
 
@@ -96,11 +96,11 @@ msgid ""
 "ttsengines` from the CLI`"
 msgstr ""
 
-#: Tts.class.php:86
+#: Tts.class.php:148
 msgid "Reset"
 msgstr "重置"
 
-#: Tts.class.php:91
+#: Tts.class.php:153
 msgid "Submit"
 msgstr "提交"
 
@@ -133,7 +133,7 @@ msgstr "文本语音"
 msgid "Text to Speech: %s"
 msgstr "TTS: %s"
 
-#: functions.inc.php:116
+#: Tts.class.php:73
 msgid "This name already exists"
 msgstr "名称已存在"
 

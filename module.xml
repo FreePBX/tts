@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>15.0.1</version>
+	<version>15.0.2</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -18,6 +18,7 @@
 		<version>13.0.154</version>
 	</depends>
 	<changelog>
+		*15.0.2* Packaging of ver 15.0.2
 		*15.0.1* branch to 15, Impliment backup 15.0
 	</changelog>
 	<popovers>

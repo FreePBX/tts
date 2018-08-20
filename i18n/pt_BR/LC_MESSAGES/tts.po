@@ -9,19 +9,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 13:24-0400\n"
+"POT-Creation-Date: 2018-08-20 14:00-0400\n"
 "PO-Revision-Date: 2017-02-14 17:03+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
 "freepbx/tts/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: functions.inc.php:18 page.tts.php:34
+#: functions.inc.php:18 page.tts.php:36
 msgid "AGI script not found"
 msgstr "Script AGI não encontrado"
 
@@ -53,7 +53,7 @@ msgstr "Aplicações"
 msgid "Choose an Engine"
 msgstr "Escolha um Mecanismo"
 
-#: Tts.class.php:81
+#: Tts.class.php:143
 msgid "Delete"
 msgstr "Apagar"
 
@@ -103,11 +103,11 @@ msgstr ""
 "Instale o módulo Mecanismos de Texto em Voz através de %s ou execute "
 "`fwconsole ma install ttsengines` a partir do CLI`"
 
-#: Tts.class.php:86
+#: Tts.class.php:148
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: Tts.class.php:91
+#: Tts.class.php:153
 msgid "Submit"
 msgstr "Enviar"
 
@@ -140,6 +140,6 @@ msgstr "Texto em Voz"
 msgid "Text to Speech: %s"
 msgstr "Texto em Voz: %s"
 
-#: functions.inc.php:116
+#: Tts.class.php:73
 msgid "This name already exists"
 msgstr "Este nome já existe"
