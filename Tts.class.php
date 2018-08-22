@@ -176,6 +176,16 @@ class Tts extends FreePBX_Helpers implements BMO {
         }
         return false;
     }
+
+	public function setDatabase($pdo){
+		$this->Database = $pdo;
+		return $this;
+	}
+	
+	public function resetDatabase(){
+		$this->Database = $this->FreePBX->Database;
+		return $this;
+	}
 }
 
 

@@ -16,7 +16,7 @@ class Restore Extends Base\RestoreBase{
     }
     $bmo = $this->FreePBX->Tts;
     $bmo->setDatabase($pdo);
-    $bmo->listTTS();
+    $configs = $bmo->listTTS();
     $bmo->resetDatabase();
     foreach ($configs as $tts) {
       $bmo->add($tts['name'], $tts['text'], $tts['goto'], $tts['engine']);
