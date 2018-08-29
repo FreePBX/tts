@@ -1,6 +1,6 @@
 <?php /* $Id: $ */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed');}
-/**	
+/**
  * License for all code of this FreePBX module can be found in the license file inside the module directory
  * Copyright 2013 Schmooze Com Inc.
  * Xavier Ourciere xourciere[at]propolys[dot]com
@@ -61,8 +61,8 @@ function tts_get_ttsengine_path($engine) {
 	}
 }
 
-function tts_list() {  
-    FreePBX::Modules()->deprecatedFunction();
+function tts_list() {
+	FreePBX::Modules()->deprecatedFunction();
 	return \FreePBX::Tts()->listTTS();
 }
 
@@ -87,4 +87,3 @@ function tts_update($p_id, $p_name, $p_text, $p_goto, $p_engine) {
     FreePBX::Modules()->deprecatedFunction();
     return \FreePBX::Tts()->edit($p_id, $p_name, $p_text, $p_goto, $p_engine);
 }
-
