@@ -59,7 +59,7 @@ switch(true) {
 	break;
 	default;
 		$format = array(
-			"ext" => "wav",
+			"ext" => "sln",
 			"rate" => "8000"
 		);
 	break;
