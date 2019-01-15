@@ -3,39 +3,38 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for tts
-# Copyright (C) 2008-2016 Sangoma, Inc.
+# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-05 13:24-0400\n"
-"PO-Revision-Date: 2017-12-11 22:57+0200\n"
-"Last-Translator: JCattan <jeremie@famillecattan.com>\n"
-"Language-Team: French "
-"<http://weblate.freepbx.org/projects/freepbx/tts/fr_FR/>\n"
-"Language: fr_FR\n"
+"PO-Revision-Date: 2018-10-17 15:00+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"Language-Team: German <http://*/projects/freepbx/tts/de/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: functions.inc.php:18 page.tts.php:34
 msgid "AGI script not found"
-msgstr "Script AGI non trouvé"
+msgstr "AGI-Skript nicht gefunden"
 
 #: views/grid.php:10
 msgid "Actions"
-msgstr "Actions"
+msgstr "Aktionen"
 
 #: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
 msgid "Add TTS"
-msgstr ""
+msgstr "TTS hinzufügen"
 
 #: views/tts.php:134
 msgid "After the Text to Speech was played go to"
-msgstr ""
+msgstr "Nachdem „Text zu Sprache“ abgespielt wurde, gehe zu"
 
 #: tts.i18n.php:8
 msgid ""
@@ -45,49 +44,51 @@ msgstr ""
 
 #: tts.i18n.php:6
 msgid "Applications"
-msgstr "Applications"
+msgstr "Anwendungen"
 
 #: views/tts.php:79
 msgid "Choose an Engine"
-msgstr ""
+msgstr "Wählen Sie eine Engine aus"
 
 #: Tts.class.php:81
 msgid "Delete"
-msgstr "Supprimer"
+msgstr "Löschen"
 
 #: views/tts.php:116
 msgid "Destintation"
-msgstr ""
+msgstr "Ziel"
 
 #: views/grid.php:9
 msgid "Engine"
-msgstr ""
+msgstr "Engine"
 
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
-msgstr ""
+msgstr "Geben Sie den Text ein, der gesprochen werden soll."
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
-msgstr ""
+msgstr "Geben Sie diesem TTS-Ziel einen kurzen Namen, um es erkennen zu können"
 
 #: views/rnav.php:3
 msgid "List TTS"
-msgstr ""
+msgstr "TTS auflisten"
 
 #: views/tts.php:106
 msgid ""
 "List of TTS engine detected on the server. Choose the one you want to use "
 "for the current sentence."
 msgstr ""
+"List der TTS-Engines, die auf dem Server gefunden wurden. Wählen Sie die, "
+"die Sie für den aktuellen Satz verwenden wollen."
 
 #: views/tts.php:24
 msgid "Main settings"
-msgstr ""
+msgstr "Haupteinstellungen"
 
 #: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
 msgid "Name"
-msgstr "Nom"
+msgstr "Name"
 
 #: views/no-ttsengines.php:3
 #, php-format
@@ -95,44 +96,46 @@ msgid ""
 "Please install the TTS Engines module via %s or run `fwconsole ma install "
 "ttsengines` from the CLI`"
 msgstr ""
+"Bitte installieren Sie das Modul „TTS Engines“ über %s oder führen Sie ‚"
+"fwconsole ma install ttsengines‘ auf der Kommandozeile aus"
 
 #: Tts.class.php:86
 msgid "Reset"
-msgstr "Reset"
+msgstr "Zurücksetzen"
 
 #: Tts.class.php:91
 msgid "Submit"
-msgstr "Envoyer"
+msgstr "Absenden"
 
 #: views/rnav.php:8
 msgid "TTS"
-msgstr ""
+msgstr "TTS"
 
 #: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
-msgstr ""
+msgstr "TTS-AGI-Skript kann nicht entfernt werden."
 
 #: views/tts.php:71
 msgid "TTS Engines"
-msgstr ""
+msgstr "TTS Engines"
 
 #: views/no-ttsengines.php:5
 msgid "TTS Engines Not Installed"
-msgstr ""
+msgstr "„TTS Engines“ nicht installiert"
 
 #: views/grid.php:8 /usr/src/freepbx/tts/views/tts.php:52
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
-msgstr ""
+msgstr "Text zu Sprache"
 
 #: functions.inc.php:46
 #, php-format
 msgid "Text to Speech: %s"
-msgstr ""
+msgstr "Text zu Sprache: %s"
 
 #: functions.inc.php:116
 msgid "This name already exists"
-msgstr ""
+msgstr "Dieser Name existiert bereits"
