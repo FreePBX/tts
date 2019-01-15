@@ -109,7 +109,10 @@ if ( !file_exists($wavefile) ) {
 		case 'pico':
 			exec($enginebin." -o $tmpwavefile ".escapeshellarg(file_get_contents($textfile)));
 			break;
-		default:
+		case 'polly':
+			exec($enginebin." /opt/aws-nodejs/polly.js --mp3=/var/lib/asterisk/sounds/tts/$engine-tts-$hash.mp3 --text='$text' --wav=/var/lib/asterisk/sounds/tts/$engine-tts-temp-$hash");
+			break;
+        default:
 			debug("$engine is not a valid engine!", 1);
 		break;
 	}
