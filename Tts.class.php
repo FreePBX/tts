@@ -72,8 +72,8 @@ class Tts extends \FreePBX_Helpers implements \BMO {
 		if (!function_exists('ttsengines_get_all_engines')) {
 				return $buttons;
 		}
-		switch($request['display']) {
-			case 'tts':
+		switch($request['view']) {
+			case 'form':
 				$buttons = array(
 					'delete' => array(
 						'name' => 'delete',
@@ -91,12 +91,11 @@ class Tts extends \FreePBX_Helpers implements \BMO {
 						'value' => _("Submit")
 					)
 				);
-				if(empty($request['id']) || $request['action'] == 'delete'){
-					unset($buttons['delete']);
-				}
-				return $buttons;
+			break;
+			default:
 			break;
 		}
+		return $buttons;
 	}
 	public function getRightNav($request) {
 		if(!empty($_GET['view']) && $_GET['view'] == 'form'){
