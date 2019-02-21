@@ -133,29 +133,30 @@ class Tts extends FreePBX_Helpers implements BMO {
 		if (!function_exists('ttsengines_get_all_engines')) {
 			return $buttons;
 		}
-		if($request['display'] === 'tts'){
-			$buttons = array(
-				'delete' => array(
-					'name' => 'delete',
-					'id' => 'delete',
-					'value' => _("Delete")
-				),
-				'reset' => array(
-					'name' => 'reset',
-					'id' => 'reset',
-					'value' => _("Reset")
-				),
-				'submit' => array(
-					'name' => 'submit',
-					'id' => 'submit',
-					'value' => _("Submit")
-				)
-			);
-			if(empty($request['id']) || $request['action'] == 'delete'){
-				unset($buttons['delete']);
-			}
-			return $buttons;
+		switch($request['view']) {
+			case 'form':
+				$buttons = array(
+					'delete' => array(
+						'name' => 'delete',
+						'id' => 'delete',
+						'value' => _("Delete")
+					),
+					'reset' => array(
+						'name' => 'reset',
+						'id' => 'reset',
+						'value' => _("Reset")
+					),
+					'submit' => array(
+						'name' => 'submit',
+						'id' => 'submit',
+						'value' => _("Submit")
+					)
+				);
+			break;
+			default:
+			break;
 		}
+		return $buttons;
 	}
 	public function getRightNav($request) {
 		if(!empty($_GET['view']) && $_GET['view'] === 'form'){
