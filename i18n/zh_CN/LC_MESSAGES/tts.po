@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-15 15:17-0500\n"
+"POT-Creation-Date: 2019-02-22 15:12+0530\n"
 "PO-Revision-Date: 2018-03-14 14:52+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -29,7 +29,7 @@ msgstr "没有发现AGI脚本"
 msgid "Actions"
 msgstr "操作"
 
-#: views/grid.php:2 /dev/shm/freepbx/tts/views/rnav.php:2
+#: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
 msgid "Add TTS"
 msgstr ""
 
@@ -85,7 +85,7 @@ msgstr ""
 msgid "Main settings"
 msgstr "主要设置"
 
-#: views/grid.php:7 /dev/shm/freepbx/tts/views/tts.php:32
+#: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
 msgid "Name"
 msgstr "名称"
 
@@ -120,11 +120,11 @@ msgstr ""
 msgid "TTS Engines Not Installed"
 msgstr ""
 
-#: views/grid.php:8 /dev/shm/freepbx/tts/views/tts.php:52
+#: views/grid.php:8 /usr/src/freepbx/tts/views/tts.php:52
 msgid "Text"
 msgstr "文本"
 
-#: tts.i18n.php:4 /dev/shm/freepbx/tts/tts.i18n.php:10 views/tts.php:8
+#: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
 msgstr "文本语音"
 
