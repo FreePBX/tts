@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 23:42-0500\n"
+"POT-Creation-Date: 2019-02-22 17:42+0530\n"
 "PO-Revision-Date: 2018-02-16 20:01+0200\n"
 "Last-Translator: Nils <Nils@heckenkamp.info>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/tts/de_DE/"
@@ -51,7 +51,7 @@ msgstr "Anwendungen"
 msgid "Choose an Engine"
 msgstr ""
 
-#: Tts.class.php:141
+#: Tts.class.php:142
 msgid "Delete"
 msgstr "Löschen"
 
@@ -96,11 +96,11 @@ msgid ""
 "ttsengines` from the CLI`"
 msgstr ""
 
-#: Tts.class.php:146
+#: Tts.class.php:147
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: Tts.class.php:151
+#: Tts.class.php:152
 msgid "Submit"
 msgstr "Absenden"
 

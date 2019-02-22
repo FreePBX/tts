@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 23:42-0500\n"
+"POT-Creation-Date: 2019-02-22 17:42+0530\n"
 "PO-Revision-Date: 2017-02-14 17:03+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -53,7 +53,7 @@ msgstr "Aplicações"
 msgid "Choose an Engine"
 msgstr "Escolha um Mecanismo"
 
-#: Tts.class.php:141
+#: Tts.class.php:142
 msgid "Delete"
 msgstr "Apagar"
 
@@ -103,11 +103,11 @@ msgstr ""
 "Instale o módulo Mecanismos de Texto em Voz através de %s ou execute "
 "`fwconsole ma install ttsengines` a partir do CLI`"
 
-#: Tts.class.php:146
+#: Tts.class.php:147
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: Tts.class.php:151
+#: Tts.class.php:152
 msgid "Submit"
 msgstr "Enviar"
 

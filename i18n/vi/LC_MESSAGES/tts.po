@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 23:42-0500\n"
+"POT-Creation-Date: 2019-02-22 17:42+0530\n"
 "PO-Revision-Date: 2017-07-25 21:58+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -53,7 +53,7 @@ msgstr "Các ứng dụng"
 msgid "Choose an Engine"
 msgstr "Chọn một Engine"
 
-#: Tts.class.php:141
+#: Tts.class.php:142
 msgid "Delete"
 msgstr "Xóa"
 
@@ -102,11 +102,11 @@ msgstr ""
 "Vui lòng cài đặt mô đun các máy tổng hợp giọng nói thông qua %s hoặc chạy "
 "`fwconsole ma install ttsengines`  từ CLI'"
 
-#: Tts.class.php:146
+#: Tts.class.php:147
 msgid "Reset"
 msgstr "Cài đặt lại"
 
-#: Tts.class.php:151
+#: Tts.class.php:152
 msgid "Submit"
 msgstr "Gửi đi"
 

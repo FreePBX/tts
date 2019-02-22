@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 23:42-0500\n"
+"POT-Creation-Date: 2019-02-22 17:42+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Choose an Engine"
 msgstr ""
 
-#: Tts.class.php:141
+#: Tts.class.php:142
 msgid "Delete"
 msgstr ""
 
@@ -94,11 +94,11 @@ msgid ""
 "ttsengines` from the CLI`"
 msgstr ""
 
-#: Tts.class.php:146
+#: Tts.class.php:147
 msgid "Reset"
 msgstr ""
 
-#: Tts.class.php:151
+#: Tts.class.php:152
 msgid "Submit"
 msgstr ""
 

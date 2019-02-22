@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 23:42-0500\n"
+"POT-Creation-Date: 2019-02-22 17:42+0530\n"
 "PO-Revision-Date: 2016-12-11 06:15+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -53,7 +53,7 @@ msgstr "Aplicaciones"
 msgid "Choose an Engine"
 msgstr "Escoger un Motor"
 
-#: Tts.class.php:141
+#: Tts.class.php:142
 msgid "Delete"
 msgstr "Borrar"
 
@@ -102,11 +102,11 @@ msgstr ""
 "Instale el módulo de motores TTS a través de %s o ejecute `fwconsole ma "
 "install ttsengines` desde la CLI`"
 
-#: Tts.class.php:146
+#: Tts.class.php:147
 msgid "Reset"
 msgstr "Reinicio"
 
-#: Tts.class.php:151
+#: Tts.class.php:152
 msgid "Submit"
 msgstr "Enviar"
 
