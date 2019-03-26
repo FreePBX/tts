@@ -44,7 +44,7 @@ function tts_getdestinfo($dest) {
 					return array();
 				} else {
 						return array('description' => sprintf(_("Text to Speech: %s"),$thistts['name']),
-							'edit_url' => 'config.php?display=tts&id='.urlencode($tts),
+							'edit_url' => 'config.php?display=tts&view=form&id='.urlencode($tts),
 							);
 				}
 	} else {
