@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>13.0.12</version>
+	<version>13.0.13</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -19,6 +19,7 @@
 	</depends>
 	<location>release/2.11/tts-2.11.0.7.tgz</location>
 	<changelog>
+		*13.0.13* Fixing FREEPBX-17867 
 		*13.0.12* Fixing FREEPBX-19522 Removing extra submit/reset button from main landing page 
 		*13.0.11* Add support for 'polly' (AWS Polly) engine 
 		*13.0.10* FREEPBX-14875 List entries option missing
