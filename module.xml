@@ -8,6 +8,7 @@
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<type>setup</type>
 	<description>Allows you to configure text to speech, and is derived from texttospeech provided in contributed modules.</description>
+  	<more-info>https://wiki.freepbx.org/display/F2/Text+to+Speech+Engines+Module</more-info>
 	<category>Applications</category>
 	<menuitems>
 		<tts needsenginedb="yes">Text To Speech</tts>
