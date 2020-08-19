@@ -1,13 +1,14 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>15.0.9</version>
+	<version>15.0.10</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<type>setup</type>
 	<description>Allows you to configure text to speech, and is derived from texttospeech provided in contributed modules.</description>
+  	<more-info>https://wiki.freepbx.org/display/F2/Text+to+Speech+Engines+Module</more-info>
 	<category>Applications</category>
 	<menuitems>
 		<tts needsenginedb="yes">Text To Speech</tts>
@@ -18,6 +19,7 @@
 		<version>13.0.154</version>
 	</depends>
 	<changelog>
+		*15.0.10* Packaging of ver 15.0.10
 		*15.0.9* Related to FREEPBX-20414: removed $jobid from runRestore() 
 		*15.0.8* Fixing FREEPBX-17867 
 		*15.0.7* Fixing FREEPBX-19522 Removing extra submit/reset button from main landing page 

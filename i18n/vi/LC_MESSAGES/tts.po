@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-10 23:07+0530\n"
+"POT-Creation-Date: 2020-08-19 10:35+0000\n"
 "PO-Revision-Date: 2017-07-25 21:58+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -29,7 +29,7 @@ msgstr "Không tìm thấy kịch bản AGI"
 msgid "Actions"
 msgstr "Các thao tác"
 
-#: views/grid.php:2 /dev/shm/freepbx/tts/views/rnav.php:2
+#: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
 msgid "Add TTS"
 msgstr "Thêm TTS"
 
@@ -89,7 +89,7 @@ msgstr ""
 msgid "Main settings"
 msgstr "Các cài đặt chính"
 
-#: views/grid.php:7 /dev/shm/freepbx/tts/views/tts.php:32
+#: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
 msgid "Name"
 msgstr "Tên"
 
@@ -126,11 +126,11 @@ msgstr "Máy tổng hợp giọng nói TTS"
 msgid "TTS Engines Not Installed"
 msgstr "Không cài đặt được máy tổng hợp giọng nói"
 
-#: views/grid.php:8 /dev/shm/freepbx/tts/views/tts.php:52
+#: views/grid.php:8 /usr/src/freepbx/tts/views/tts.php:52
 msgid "Text"
 msgstr "Văn bản"
 
-#: tts.i18n.php:4 /dev/shm/freepbx/tts/tts.i18n.php:10 views/tts.php:8
+#: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
 msgstr "Tính năng Text To Speech"
 
