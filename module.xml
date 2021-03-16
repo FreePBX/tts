@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>15.0.11</version>
+	<version>16.0.1</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -19,17 +19,7 @@
 		<version>13.0.154</version>
 	</depends>
 	<changelog>
-		*15.0.11* Packaging of ver 15.0.11
-		*15.0.10* Packaging of ver 15.0.10
-		*15.0.9* Related to FREEPBX-20414: removed $jobid from runRestore() 
-		*15.0.8* Fixing FREEPBX-17867 
-		*15.0.7* Fixing FREEPBX-19522 Removing extra submit/reset button from main landing page 
-		*15.0.6* fixing legacy restore 
-		*15.0.5* Add support for 'polly' (AWS Polly) engine 
-		*15.0.4* FREEPBX-18091 
-		*15.0.3* Packaging of ver 15.0.3
-		*15.0.2* Packaging of ver 15.0.2
-		*15.0.1* branch to 15, Impliment backup 15.0
+		*16.0.1* 16.0 
 	</changelog>
 	<popovers>
 		<tts>
@@ -46,6 +36,6 @@
         </table>
     </database>
 	<supported>
-		<version>15.0</version>
+		<version>16.0</version>
 	</supported>
 </module>
