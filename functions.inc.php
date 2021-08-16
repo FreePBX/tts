@@ -108,7 +108,8 @@ function tts_del($p_id) {
 
 function tts_add($p_name, $p_text, $p_goto, $p_engine) {
 	global $db;
-
+	$p_name = htmlentities($p_name, ENT_COMPAT | ENT_HTML401, "UTF-8");
+	$p_text = htmlentities($p_text,ENT_COMPAT | ENT_HTML401, "UTF-8");
 	$tts_list = \FreePBX::Tts()->listTTS();
 	if (is_array($tts_list)) {
 		foreach ($tts_list as $tts) {
