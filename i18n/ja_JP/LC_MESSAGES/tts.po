@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-22 15:12+0530\n"
+"POT-Creation-Date: 2021-09-15 08:03+0000\n"
 "PO-Revision-Date: 2015-10-27 08:43+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -163,7 +163,7 @@ msgstr "音声読み上げ（TTS）"
 msgid "Text to Speech: %s"
 msgstr "TTS: %s"
 
-#: functions.inc.php:116
+#: functions.inc.php:117
 msgid "This name already exists"
 msgstr "この名前はすでに存在します"
 
