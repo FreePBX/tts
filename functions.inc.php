@@ -125,6 +125,8 @@ function tts_add($p_name, $p_text, $p_goto, $p_engine) {
 }
 
 function tts_update($p_id, $p_name, $p_text, $p_goto, $p_engine) {
+	$p_name = htmlentities($p_name, ENT_COMPAT | ENT_HTML401, "UTF-8");
+	$p_text = htmlentities($p_text,ENT_COMPAT | ENT_HTML401, "UTF-8");
 	$results = sql("UPDATE tts SET name=".sql_formattext($p_name).", text=".sql_formattext($p_text).", goto=".sql_formattext($p_goto).", engine=".sql_formattext($p_engine)." WHERE id=".$p_id);
 }
 
