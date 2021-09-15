@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>15.0.11</version>
+	<version>15.0.12</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -19,6 +19,7 @@
 		<version>13.0.154</version>
 	</depends>
 	<changelog>
+		*15.0.12* FREEI-3374 Vuln-001 Stored Cross-Site Scripting 
 		*15.0.11* Packaging of ver 15.0.11
 		*15.0.10* Packaging of ver 15.0.10
 		*15.0.9* Related to FREEPBX-20414: removed $jobid from runRestore() 
