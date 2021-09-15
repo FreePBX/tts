@@ -63,6 +63,8 @@ class Tts extends FreePBX_Helpers implements BMO {
 	}
 
 	public function add($name, $text, $goto, $engine){
+		$name = htmlentities($name, ENT_COMPAT | ENT_HTML401, "UTF-8");
+		$text = htmlentities($text,ENT_COMPAT | ENT_HTML401, "UTF-8");
 		$tts_list = $this->listTTS();
 		$tts = [];
 		if (is_array($tts_list)) {
@@ -85,6 +87,8 @@ class Tts extends FreePBX_Helpers implements BMO {
 	}
 
 	public function edit($id, $name, $text, $goto, $engine){
+		$name = htmlentities($name, ENT_COMPAT | ENT_HTML401, "UTF-8");
+		$text = htmlentities($text, ENT_COMPAT | ENT_HTML401, "UTF-8");
 		$sql = 'UPDATE tts SET name = :name, text=:text, goto=:goto, engine=:engine WHERE id = :id';
 		$stmt = $this->FreePBX->Database->prepare($sql);
 		$stmt->execute([
