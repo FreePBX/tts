@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-19 10:35+0000\n"
+"POT-Creation-Date: 2021-09-15 08:05+0000\n"
 "PO-Revision-Date: 2016-10-08 12:16+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -51,7 +51,7 @@ msgstr "برنامه ها"
 msgid "Choose an Engine"
 msgstr "یک موتور انتخاب کن"
 
-#: Tts.class.php:142
+#: Tts.class.php:146
 msgid "Delete"
 msgstr "حذف"
 
@@ -100,11 +100,11 @@ msgstr ""
 "لطفا یک موتور  %s متن به گفتار نصب کنید ویا از طریق کنسول این موتور رانصب "
 "کنید"
 
-#: Tts.class.php:147
+#: Tts.class.php:151
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: Tts.class.php:152
+#: Tts.class.php:156
 msgid "Submit"
 msgstr "ثبت"
 
@@ -137,7 +137,7 @@ msgstr "متن به گفتار"
 msgid "Text to Speech: %s"
 msgstr "متن به گفتار ：%s"
 
-#: Tts.class.php:71
+#: Tts.class.php:73
 msgid "This name already exists"
 msgstr "این نام موجود است"
 

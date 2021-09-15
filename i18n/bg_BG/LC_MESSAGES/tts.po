@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-19 10:35+0000\n"
+"POT-Creation-Date: 2021-09-15 08:05+0000\n"
 "PO-Revision-Date: 2016-08-04 19:30+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -62,7 +62,7 @@ msgstr "Приложения"
 msgid "Choose an Engine"
 msgstr ""
 
-#: Tts.class.php:142
+#: Tts.class.php:146
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -107,11 +107,11 @@ msgid ""
 "ttsengines` from the CLI`"
 msgstr ""
 
-#: Tts.class.php:147
+#: Tts.class.php:151
 msgid "Reset"
 msgstr ""
 
-#: Tts.class.php:152
+#: Tts.class.php:156
 msgid "Submit"
 msgstr ""
 
@@ -144,7 +144,7 @@ msgstr "Текст към Говор"
 msgid "Text to Speech: %s"
 msgstr "Текст към Говор: %s"
 
-#: Tts.class.php:71
+#: Tts.class.php:73
 msgid "This name already exists"
 msgstr "Това име вече съществува"
 
