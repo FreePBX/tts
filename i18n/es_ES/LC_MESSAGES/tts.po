@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 08:03+0000\n"
-"PO-Revision-Date: 2016-12-11 06:15+0200\n"
-"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/tts/"
-"es_ES/>\n"
+"PO-Revision-Date: 2023-02-10 18:52+0000\n"
+"Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/tts/es/>"
+"\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: functions.inc.php:18 page.tts.php:34
 msgid "AGI script not found"
@@ -27,7 +27,7 @@ msgstr "No se encontró el Script AGI"
 
 #: views/grid.php:10
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
 msgid "Add TTS"
@@ -63,7 +63,7 @@ msgstr "Destino"
 
 #: views/grid.php:9
 msgid "Engine"
-msgstr ""
+msgstr "Motor"
 
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
@@ -75,7 +75,7 @@ msgstr "Dé a este destino TTS un nombre breve para ayudarlo a identificarlo"
 
 #: views/rnav.php:3
 msgid "List TTS"
-msgstr ""
+msgstr "Listar TTS"
 
 #: views/tts.php:106
 msgid ""
