@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 09:00+0000\n"
-"PO-Revision-Date: 2023-11-11 16:01+0000\n"
+"PO-Revision-Date: 2023-11-17 16:47+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/tts/pl/>\n"
 "Language: pl\n"
@@ -72,25 +72,27 @@ msgstr "Wpisz tekst, który chcesz przetworzyć na mowę"
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
-msgstr ""
+msgstr "Nadaj nazwę temu miejscu docelowemu TTS, aby pomóc je identyfikować"
 
 #: views/rnav.php:3
 msgid "List TTS"
-msgstr ""
+msgstr "Lista TTS"
 
 #: views/tts.php:106
 msgid ""
 "List of TTS engine detected on the server. Choose the one you want to use "
 "for the current sentence."
 msgstr ""
+"Lista silników TTS wykrytych na tym serwerze. Wybierz silnik, którego chcesz "
+"użyć w bieżącym zdaniu."
 
 #: views/tts.php:24
 msgid "Main settings"
-msgstr ""
+msgstr "Ustawienia główne"
 
 #: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 #: views/no-ttsengines.php:3
 #, php-format
@@ -98,45 +100,47 @@ msgid ""
 "Please install the TTS Engines module via %s or run `fwconsole ma install "
 "ttsengines` from the CLI`"
 msgstr ""
+"Zainstaluj moduł TTS Engines za pomocą %s1 lub uruchom polecenie `fwconsole "
+"ma install ttsengines` z interfejsu wiersza poleceń CLI"
 
 #: Tts.class.php:86
 msgid "Reset"
-msgstr ""
+msgstr "Zresetuj"
 
 #: Tts.class.php:91
 msgid "Submit"
-msgstr ""
+msgstr "Wyślij"
 
 #: views/rnav.php:8
 msgid "TTS"
-msgstr ""
+msgstr "TTS"
 
 #: uninstall.php:14
 msgid "TTS AGI script cannot be removed."
-msgstr ""
+msgstr "Nie można usunąć skryptu TTS AGI."
 
 #: views/tts.php:71
 msgid "TTS Engines"
-msgstr ""
+msgstr "Silniki TTS"
 
 #: views/no-ttsengines.php:5
 msgid "TTS Engines Not Installed"
-msgstr ""
+msgstr "Nie zainstalowane silniki TTS"
 
 #: views/grid.php:8 /usr/src/freepbx/tts/views/tts.php:52
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10
 #: views/tts.php:8
 msgid "Text To Speech"
-msgstr ""
+msgstr "Tekst na Mowę"
 
 #: functions.inc.php:46
 #, php-format
 msgid "Text to Speech: %s"
-msgstr ""
+msgstr "Tekst na Mowę: %s"
 
 #: functions.inc.php:117
 msgid "This name already exists"
-msgstr ""
+msgstr "Ta nazwa już istnieje"
