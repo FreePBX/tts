@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 09:00+0000\n"
-"PO-Revision-Date: 2023-11-18 17:01+0000\n"
+"PO-Revision-Date: 2023-11-20 02:00+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/tts/pl/>\n"
 "Language: pl\n"
@@ -68,7 +68,7 @@ msgstr "Silnik"
 
 #: views/tts.php:64
 msgid "Enter the text you want to synthetize."
-msgstr "Wpisz tekst, który chcesz przetworzyć na mowę"
+msgstr "Wprowadź tekst, który chcesz przetworzyć na mowę."
 
 #: views/tts.php:42
 msgid "Give this TTS Destination a brief name to help you identify it"
