@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 09:00+0000\n"
-"PO-Revision-Date: 2023-11-20 02:00+0000\n"
+"PO-Revision-Date: 2023-12-14 08:24+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/tts/pl/>\n"
 "Language: pl\n"
@@ -109,7 +109,7 @@ msgstr "Zresetuj"
 
 #: Tts.class.php:91
 msgid "Submit"
-msgstr "Wyślij"
+msgstr "Zatwierdź"
 
 #: views/rnav.php:8
 msgid "TTS"
