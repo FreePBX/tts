@@ -9,20 +9,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-15 09:00+0000\n"
+"POT-Creation-Date: 2023-12-18 06:55-0500\n"
 "PO-Revision-Date: 2023-12-14 08:24+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/tts/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: functions.inc.php:18
-#: page.tts.php:34
+#: functions.inc.php:18 page.tts.php:36
 msgid "AGI script not found"
 msgstr "Skrypt AGI nie został znaleziony"
 
@@ -54,7 +53,7 @@ msgstr "Aplikacje"
 msgid "Choose an Engine"
 msgstr "Wybierz silnik"
 
-#: Tts.class.php:81
+#: Tts.class.php:146
 msgid "Delete"
 msgstr "Usuń"
 
@@ -103,11 +102,11 @@ msgstr ""
 "Zainstaluj moduł TTS Engines za pomocą %s lub uruchom polecenie `fwconsole "
 "ma install ttsengines` z interfejsu wiersza poleceń CLI"
 
-#: Tts.class.php:86
+#: Tts.class.php:151
 msgid "Reset"
 msgstr "Zresetuj"
 
-#: Tts.class.php:91
+#: Tts.class.php:156
 msgid "Submit"
 msgstr "Zatwierdź"
 
@@ -131,8 +130,7 @@ msgstr "Nie zainstalowane silniki TTS"
 msgid "Text"
 msgstr "Tekst"
 
-#: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10
-#: views/tts.php:8
+#: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10 views/tts.php:8
 msgid "Text To Speech"
 msgstr "Tekst na Mowę"
 
@@ -141,6 +139,6 @@ msgstr "Tekst na Mowę"
 msgid "Text to Speech: %s"
 msgstr "Tekst na Mowę: %s"
 
-#: functions.inc.php:117
+#: Tts.class.php:73
 msgid "This name already exists"
 msgstr "Ta nazwa już istnieje"
