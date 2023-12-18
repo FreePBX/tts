@@ -1,0 +1,146 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for tts
+# Copyright (C) 2008-2021 Sangoma Technologies, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-15 09:00+0000\n"
+"PO-Revision-Date: 2023-12-14 08:24+0000\n"
+"Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
+"Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/tts/pl/>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
+
+#: functions.inc.php:18
+#: page.tts.php:34
+msgid "AGI script not found"
+msgstr "Skrypt AGI nie został znaleziony"
+
+#: views/grid.php:10
+msgid "Actions"
+msgstr "Działania"
+
+#: views/grid.php:2 /usr/src/freepbx/tts/views/rnav.php:2
+msgid "Add TTS"
+msgstr "Dodaj zamianę tekstu na mowę"
+
+#: views/tts.php:134
+msgid "After the Text to Speech was played go to"
+msgstr "Po odtworzeniu zamiany tekstu na mowę idź do"
+
+#: tts.i18n.php:8
+msgid ""
+"Allows you to configure text to speech, and is derived from texttospeech "
+"provided in contributed modules."
+msgstr ""
+"Umożliwia skonfigurowanie zamiany tekstu na mowę i jest pochodną funkcji "
+"zamiany tekstu na mowę udostępnianą w dostarczonych modułach."
+
+#: tts.i18n.php:6
+msgid "Applications"
+msgstr "Aplikacje"
+
+#: views/tts.php:79
+msgid "Choose an Engine"
+msgstr "Wybierz silnik"
+
+#: Tts.class.php:81
+msgid "Delete"
+msgstr "Usuń"
+
+#: views/tts.php:116
+msgid "Destintation"
+msgstr "Cel"
+
+#: views/grid.php:9
+msgid "Engine"
+msgstr "Silnik"
+
+#: views/tts.php:64
+msgid "Enter the text you want to synthetize."
+msgstr "Wprowadź tekst, który chcesz przetworzyć na mowę."
+
+#: views/tts.php:42
+msgid "Give this TTS Destination a brief name to help you identify it"
+msgstr "Nadaj nazwę temu miejscu docelowemu TTS, aby pomóc je identyfikować"
+
+#: views/rnav.php:3
+msgid "List TTS"
+msgstr "Lista TTS"
+
+#: views/tts.php:106
+msgid ""
+"List of TTS engine detected on the server. Choose the one you want to use "
+"for the current sentence."
+msgstr ""
+"Lista silników TTS wykrytych na tym serwerze. Wybierz silnik, którego chcesz "
+"użyć w bieżącym zdaniu."
+
+#: views/tts.php:24
+msgid "Main settings"
+msgstr "Ustawienia główne"
+
+#: views/grid.php:7 /usr/src/freepbx/tts/views/tts.php:32
+msgid "Name"
+msgstr "Nazwa"
+
+#: views/no-ttsengines.php:3
+#, php-format
+msgid ""
+"Please install the TTS Engines module via %s or run `fwconsole ma install "
+"ttsengines` from the CLI`"
+msgstr ""
+"Zainstaluj moduł TTS Engines za pomocą %s lub uruchom polecenie `fwconsole "
+"ma install ttsengines` z interfejsu wiersza poleceń CLI"
+
+#: Tts.class.php:86
+msgid "Reset"
+msgstr "Zresetuj"
+
+#: Tts.class.php:91
+msgid "Submit"
+msgstr "Zatwierdź"
+
+#: views/rnav.php:8
+msgid "TTS"
+msgstr "TTS"
+
+#: uninstall.php:14
+msgid "TTS AGI script cannot be removed."
+msgstr "Nie można usunąć skryptu TTS AGI."
+
+#: views/tts.php:71
+msgid "TTS Engines"
+msgstr "Silniki TTS"
+
+#: views/no-ttsengines.php:5
+msgid "TTS Engines Not Installed"
+msgstr "Nie zainstalowane silniki TTS"
+
+#: views/grid.php:8 /usr/src/freepbx/tts/views/tts.php:52
+msgid "Text"
+msgstr "Tekst"
+
+#: tts.i18n.php:4 /usr/src/freepbx/tts/tts.i18n.php:10
+#: views/tts.php:8
+msgid "Text To Speech"
+msgstr "Tekst na Mowę"
+
+#: functions.inc.php:46
+#, php-format
+msgid "Text to Speech: %s"
+msgstr "Tekst na Mowę: %s"
+
+#: functions.inc.php:117
+msgid "This name already exists"
+msgstr "Ta nazwa już istnieje"
