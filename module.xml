@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>16.0.3</version>
+	<version>17.0.1</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -19,9 +19,7 @@
 		<version>13.0.154</version>
 	</depends>
 	<changelog>
-		*16.0.3* Packaging of ver 16.0.3
-		*16.0.2* FREEI-3374 Vuln-001 Stored Cross-Site Scripting 
-		*16.0.1* 16.0
+		*17.0.1* 17.0
 	</changelog>
 	<popovers>
 		<tts>
@@ -38,6 +36,6 @@
         </table>
     </database>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 </module>
