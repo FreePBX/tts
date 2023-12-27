@@ -43,7 +43,7 @@ class Tts extends FreePBX_Helpers implements BMO {
 			needreload();
 			break;
 			case "edit":
-			$this->edit($vars['id'], $vars['name'], $vars['text'], $goto, $_REQUEST['engine']);
+			$this->edit($vars['id'], $vars['name'], $vars['text'], $goto, $_REQUEST['engine'] ?? '');
 			needreload();
 			break;
 			default:
