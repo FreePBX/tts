@@ -123,6 +123,10 @@ class Tts extends FreePBX_Helpers implements BMO {
 				$ttsgoto = $tts['goto'];
 				$ttsengine = $tts['engine'];
 				$ttspath = tts_get_ttsengine_path($ttsengine);
+                // if engine path doesn't exist or no tts engine found...skip
+                if (!is_array($ttspath) || !is_file($ttspath['path'])) {
+                    continue;
+                }
 				$ext->add($contextname, $ttsid, '', new \ext_noop('TTS: ' . $ttsname));
 				$ext->add($contextname, $ttsid, '', new \ext_noop('Using: ' . $ttsengine));
 				$ext->add($contextname, $ttsid, '', new \ext_answer());
