@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-15 08:05+0000\n"
+"POT-Creation-Date: 2025-02-07 00:01-0500\n"
 "PO-Revision-Date: 2015-10-27 08:43+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/tts/"
@@ -81,7 +81,7 @@ msgstr "アプリケーション"
 msgid "Choose an Engine"
 msgstr ""
 
-#: Tts.class.php:146
+#: Tts.class.php:150
 msgid "Delete"
 msgstr "削除"
 
@@ -126,11 +126,11 @@ msgid ""
 "ttsengines` from the CLI`"
 msgstr ""
 
-#: Tts.class.php:151
+#: Tts.class.php:155
 msgid "Reset"
 msgstr "リセット"
 
-#: Tts.class.php:156
+#: Tts.class.php:160
 msgid "Submit"
 msgstr "送信"
 
