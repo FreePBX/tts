@@ -1,14 +1,14 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>17.0.1.1</version>
+	<version>17.0.2</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<type>setup</type>
 	<description>Allows you to configure text to speech, and is derived from texttospeech provided in contributed modules.</description>
-  	<more-info>https://wiki.freepbx.org/display/FPG/Text+to+Speech+Engines+Module</more-info>
+  	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/26640584/Text+to+Speech+Engines+Module</more-info>
 	<category>Applications</category>
 	<menuitems>
 		<tts needsenginedb="yes">Text To Speech</tts>
@@ -19,7 +19,7 @@
 		<version>13.0.154</version>
 	</depends>
 	<changelog>
-		*17.0.1.1* 17.0
+		*17.0.2* Github #627 Fix issues with TTS module dialplan generation 
 		*17.0.1* 17.0
 	</changelog>
 	<popovers>
