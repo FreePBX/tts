@@ -13,7 +13,7 @@ require_once "phpagi-asmanager.php";
 $AGI = new AGI();
 debug("TTS AGI Started", 1);
 
-$text = $argv[1];
+$text = html_entity_decode($argv[1], ENT_QUOTES | ENT_HTML5, 'UTF-8');
 $hash = md5($text);
 $engine = $argv[2];
 $enginebin = $argv[3];
@@ -90,7 +90,12 @@ if ( !file_exists($wavefile) ) {
 		debug("ERROR: Cannot open the file: $textfile", 1);
 		return 1;
 	}
-	if ( false === fwrite($fh, $text) ) {
+	// Sanitize text before writing to file-based engines
+        $clean_text = str_replace(["\r\n", "\r"], "\n", $text);          // Normalize line endings
+        $clean_text = preg_replace('/[^\P{C}\t\n]+/u', '', $clean_text); // Remove control characters
+        $clean_text = trim($clean_text);
+
+        if ( false === fwrite($fh, $clean_text) ) {
 		debug("ERROR: Cannot write to file: $textfile", 1);
 		return 1;
 	}
@@ -110,7 +115,7 @@ if ( !file_exists($wavefile) ) {
 			exec($enginebin." -o $tmpwavefile ".escapeshellarg(file_get_contents($textfile)));
 			break;
 		case 'polly':
-			exec($enginebin." /opt/aws-nodejs/polly.js --mp3=/var/lib/asterisk/sounds/tts/$engine-tts-$hash.mp3 --text='$text' --wav=/var/lib/asterisk/sounds/tts/$engine-tts-temp-$hash");
+			exec($enginebin." /opt/aws-nodejs/polly.js --mp3=/var/lib/asterisk/sounds/tts/$engine-tts-$hash.mp3 --text=$escapedText --wav=/var/lib/asterisk/sounds/tts/$engine-tts-temp-$hash");
 			break;
         default:
 			debug("$engine is not a valid engine!", 1);
