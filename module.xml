@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>17.0.2</version>
+	<version>17.0.3</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -16,9 +16,10 @@
 	<depends>
 		<engine>asterisk ge 1.6</engine>
 		<module>ttsengines</module>
-		<version>13.0.154</version>
+		<version>17.0.1</version>
 	</depends>
 	<changelog>
+		*17.0.3* Github #821 Fixing propolys TTS AGI 
 		*17.0.2* Github #627 Fix issues with TTS module dialplan generation 
 		*17.0.1* 17.0
 	</changelog>
