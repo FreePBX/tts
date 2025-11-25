@@ -69,8 +69,8 @@ function tts_list() {
 function tts_get($p_id) {
 	global $db;
 
-	$sql = "SELECT id, name, text, goto, engine FROM tts WHERE id=$p_id";
-	return $db->getRow($sql, DB_FETCHMODE_ASSOC);
+	$sql = "SELECT id, name, text, goto, engine FROM tts WHERE id=?";
+	return $db->getRow($sql, [$p_id] ,DB_FETCHMODE_ASSOC);
 }
 
 function tts_del($p_id) {

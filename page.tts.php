@@ -36,8 +36,10 @@ if (!($tts_agi = file_exists($astlib_path."/agi-bin/propolys-tts.agi"))) {
 	$data['tts_agi_error'] = _("AGI script not found");
 }
 if(isset($_GET['view']) && $_GET['view'] == 'form'){
-	if (!empty($_GET['id']) || $action !== 'delete') {
-		$tts = tts_get($_REQUEST['id'] ?? '');
+	$id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
+
+	if ($id || $action !== 'delete') {
+		$tts = tts_get($id);
 		foreach ($tts as $key => $value) {
 			$data[$key] = $value;
 		}
