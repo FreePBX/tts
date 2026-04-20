@@ -112,6 +112,16 @@ class Tts extends FreePBX_Helpers implements BMO {
 		return true;
 	}
 
+	/**
+	 * Prepare TTS text for inclusion in a dialplan AGI() line.
+	 * Stored text may be HTML-entity encoded; decode so engines speak real characters.
+	 * Escape characters that Asterisk treats specially (notably ';' starts a comment).
+	 */
+	private function sanitizeTtsTextForDialplan($text) {
+		$text = html_entity_decode((string) $text, ENT_COMPAT | ENT_HTML401, 'UTF-8');
+		return str_replace(['\\', '"', ';', "\r", "\n"], ['\\\\', '\\"', '\\;', ' ', ' '], $text);
+	}
+
 	public function doDialplanHook(&$ext, $engine, $priority){
 		$contextname = 'ext-tts';
 		if (is_array($tts_list = $this->listTTS())) {
@@ -119,7 +129,7 @@ class Tts extends FreePBX_Helpers implements BMO {
 				$tts = tts_get($item['id']);
 				$ttsid = $tts['id'];
 				$ttsname = $tts['name'];
-				$ttstext = $tts['text'];
+				$ttstext = $this->sanitizeTtsTextForDialplan($tts['text']);
 				$ttsgoto = $tts['goto'];
 				$ttsengine = $tts['engine'];
 				$ttspath = tts_get_ttsengine_path($ttsengine);
