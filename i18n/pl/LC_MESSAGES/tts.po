@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 00:01-0500\n"
+"POT-Creation-Date: 2026-04-20 01:55-0400\n"
 "PO-Revision-Date: 2023-12-14 08:24+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/tts/pl/>\n"
@@ -53,7 +53,7 @@ msgstr "Aplikacje"
 msgid "Choose an Engine"
 msgstr "Wybierz silnik"
 
-#: Tts.class.php:150
+#: Tts.class.php:160
 msgid "Delete"
 msgstr "Usuń"
 
@@ -102,11 +102,11 @@ msgstr ""
 "Zainstaluj moduł TTS Engines za pomocą %s lub uruchom polecenie `fwconsole "
 "ma install ttsengines` z interfejsu wiersza poleceń CLI"
 
-#: Tts.class.php:155
+#: Tts.class.php:165
 msgid "Reset"
 msgstr "Zresetuj"
 
-#: Tts.class.php:160
+#: Tts.class.php:170
 msgid "Submit"
 msgstr "Zatwierdź"
 
