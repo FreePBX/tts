@@ -128,7 +128,7 @@ class Tts extends FreePBX_Helpers implements BMO {
 			foreach ($tts_list as $item) {
 				$tts = tts_get($item['id']);
 				$ttsid = $tts['id'];
-				$ttsname = $tts['name'];
+				$ttsname = trim($this->sanitizeTtsTextForDialplan($tts['name']));
 				$ttstext = $this->sanitizeTtsTextForDialplan($tts['text']);
 				$ttsgoto = $tts['goto'];
 				$ttsengine = $tts['engine'];
@@ -140,7 +140,7 @@ class Tts extends FreePBX_Helpers implements BMO {
 				$ext->add($contextname, $ttsid, '', new \ext_noop('TTS: ' . $ttsname));
 				$ext->add($contextname, $ttsid, '', new \ext_noop('Using: ' . $ttsengine));
 				$ext->add($contextname, $ttsid, '', new \ext_answer());
-				$ext->add($contextname, $ttsid, '', new \ext_agi('propolys-tts.agi,"' . $ttstext . '",' . $ttsengine . ',' . $ttspath['path']));
+				$ext->add($contextname, $ttsid, '', new \ext_agi('propolys-tts.agi,"' . $ttstext . '",' . $ttsengine . ',' . $ttspath['path'] . ',"' . $ttsname . '"'));
 				$ext->add($contextname, $ttsid, '', new \ext_goto($ttsgoto));
 			}
 		}
