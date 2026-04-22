@@ -17,6 +17,7 @@ $text = html_entity_decode($argv[1], ENT_QUOTES | ENT_HTML5, 'UTF-8');
 $hash = md5($text);
 $engine = $argv[2];
 $enginebin = $argv[3];
+$ttsname = str_replace(' ', '_', $argv[4]);
 
 $f = $AGI->get_full_variable('${CHANNEL(audionativeformat)}');
 $nformat = $f['data'];
@@ -78,10 +79,10 @@ if ( $retval != 0 ) {
 $soundsdir = $config["ASTVARLIBDIR"]."/sounds/tts";
 if( !is_dir($soundsdir) ) mkdir($soundsdir, 0775);
 
-$wavefile = $soundsdir."/$engine-tts-$hash.".$format['ext'];
-$tmpwavefile = $soundsdir."/$engine-tts-temp-$hash.wav";
+$wavefile = $soundsdir."/$engine-$ttsname-tts-$hash.".$format['ext'];
+$tmpwavefile = $soundsdir."/$engine-$ttsname-tts-temp-$hash.wav";
 debug("Generated WAV file: $wavefile", 3);
-$textfile = $soundsdir."/$engine-tts-$hash.txt";
+$textfile = $soundsdir."/$engine-$ttsname-tts-$hash.txt";
 debug("TXT file: $textfile", 3);
 
 if ( !file_exists($wavefile) ) {
