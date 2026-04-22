@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>17.0.5.1</version>
+	<version>17.0.5.2</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -19,6 +19,7 @@
 		<version>17.0.1</version>
 	</depends>
 	<changelog>
+		*17.0.5.2* #1006 - Changes done for adding ttsname into propolys agi 
 		*17.0.5* FREEI-2466 undefined array key error 
 		*17.0.4* FREEI-2466 type casting id as int for tts_get() method 
 		*17.0.3* Github #821 Fixing propolys TTS AGI 
