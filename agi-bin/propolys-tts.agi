@@ -117,7 +117,9 @@ if ( !file_exists($wavefile) ) {
 			break;
 		case 'polly':
 			$escapedText = escapeshellarg($text);
-			exec($enginebin." /opt/aws-nodejs/polly.js --mp3=/var/lib/asterisk/sounds/tts/$engine-tts-$hash.mp3 --text=$escapedText --wav=/var/lib/asterisk/sounds/tts/$engine-tts-temp-$hash");
+			$mp3file = preg_replace('/\.wav$/', '.mp3', $tmpwavefile);
+			$wavBase = preg_replace('/\.wav$/', '', $tmpwavefile);
+			exec($enginebin." /opt/aws-nodejs/polly.js --mp3=$mp3file --text=$escapedText --wav=$wavBase");
 			break;
         default:
 			debug("$engine is not a valid engine!", 1);
