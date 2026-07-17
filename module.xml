@@ -1,7 +1,7 @@
 <module>
 	<rawname>tts</rawname>
 	<name>Text To Speech</name>
-	<version>17.0.6</version>
+	<version>18.0.1</version>
 	<repo>extended</repo>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -16,17 +16,10 @@
 	<depends>
 		<engine>asterisk ge 1.6</engine>
 		<module>ttsengines</module>
-		<version>17.0.1</version>
+		<version>18.0</version>
 	</depends>
 	<changelog>
-		*17.0.6* FREEI-2970-Security - Authenticated TTS AGI Command Injection Through TTS Name 
-		*17.0.5.3* #1017 -Changes done for polly files on engine broken case 
-		*17.0.5.2* #1006 - Changes done for adding ttsname into propolys agi 
-		*17.0.5* FREEI-2466 undefined array key error 
-		*17.0.4* FREEI-2466 type casting id as int for tts_get() method 
-		*17.0.3* Github #821 Fixing propolys TTS AGI 
-		*17.0.2* Github #627 Fix issues with TTS module dialplan generation 
-		*17.0.1* 17.0
+		*18.0.1* initial release
 	</changelog>
 	<popovers>
 		<tts>
@@ -43,6 +36,6 @@
         </table>
     </database>
 	<supported>
-		<version>17.0</version>
+		<version>18.0</version>
 	</supported>
 </module>
