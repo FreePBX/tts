@@ -35,16 +35,18 @@ class Tts extends FreePBX_Helpers implements BMO {
 
 		switch ($vars['action']) {
 			case "add":
-			$this->add($vars['name'], $vars['text'], $goto, $vars['engine']);
-			needreload();
+			if ($this->add($vars['name'], $vars['text'], $goto, $vars['engine']) !== false) {
+				needreload();
+			}
 			break;
 			case "delete":
 			$this->delete($vars['id']);
 			needreload();
 			break;
 			case "edit":
-			$this->edit($vars['id'], $vars['name'], $vars['text'], $goto, $_REQUEST['engine'] ?? '');
-			needreload();
+			if ($this->edit($vars['id'], $vars['name'], $vars['text'], $goto, $_REQUEST['engine'] ?? '') !== false) {
+				needreload();
+			}
 			break;
 			default:
 			break;
@@ -63,6 +65,11 @@ class Tts extends FreePBX_Helpers implements BMO {
 	}
 
 	public function add($name, $text, $goto, $engine){
+		$goto = $this->sanitizeTtsGoto($goto);
+		if ($goto === '') {
+			echo "<script>javascript:alert('" . _("Invalid destination") . "');</script>";
+			return false;
+		}
 		$name = htmlentities($name, ENT_COMPAT | ENT_HTML401, "UTF-8");
 		$text = htmlentities($text,ENT_COMPAT | ENT_HTML401, "UTF-8");
 		$tts_list = $this->listTTS();
@@ -87,6 +94,11 @@ class Tts extends FreePBX_Helpers implements BMO {
 	}
 
 	public function edit($id, $name, $text, $goto, $engine){
+		$goto = $this->sanitizeTtsGoto($goto);
+		if ($goto === '') {
+			echo "<script>javascript:alert('" . _("Invalid destination") . "');</script>";
+			return false;
+		}
 		$name = htmlentities($name, ENT_COMPAT | ENT_HTML401, "UTF-8");
 		$text = htmlentities($text, ENT_COMPAT | ENT_HTML401, "UTF-8");
 		$sql = 'UPDATE tts SET name = :name, text=:text, goto=:goto, engine=:engine WHERE id = :id';
@@ -122,6 +134,26 @@ class Tts extends FreePBX_Helpers implements BMO {
 		return str_replace(['\\', '"', ';', "\r", "\n"], ['\\\\', '\\"', '\\;', ' ', ' '], $text);
 	}
 
+	/**
+	 * Destination stored for Goto(). Must stay a single context,exten,priority
+	 * value. Control characters, comments, and backslashes can break out of
+	 * the generated dialplan line (FREEI-3284). Returns '' when unsafe.
+	 * Column tts.goto is varchar(50).
+	 */
+	private function sanitizeTtsGoto($goto) {
+		$goto = trim((string) $goto);
+		if ($goto === '' || strlen($goto) > 50) {
+			return '';
+		}
+		if (preg_match('/[[:cntrl:];\\\\]/', $goto)) {
+			return '';
+		}
+		if (!preg_match('/^[^,]+,[^,]+,[^,]+$/', $goto)) {
+			return '';
+		}
+		return $goto;
+	}
+
 	public function doDialplanHook(&$ext, $engine, $priority){
 		$contextname = 'ext-tts';
 		if (is_array($tts_list = $this->listTTS())) {
@@ -130,7 +162,7 @@ class Tts extends FreePBX_Helpers implements BMO {
 				$ttsid = $tts['id'];
 				$ttsname = trim($this->sanitizeTtsTextForDialplan($tts['name']));
 				$ttstext = $this->sanitizeTtsTextForDialplan($tts['text']);
-				$ttsgoto = $tts['goto'];
+				$ttsgoto = $this->sanitizeTtsGoto($tts['goto'] ?? '');
 				$ttsengine = $tts['engine'];
 				$ttspath = tts_get_ttsengine_path($ttsengine);
                 // if engine path doesn't exist or no tts engine found...skip
@@ -141,7 +173,11 @@ class Tts extends FreePBX_Helpers implements BMO {
 				$ext->add($contextname, $ttsid, '', new \ext_noop('Using: ' . $ttsengine));
 				$ext->add($contextname, $ttsid, '', new \ext_answer());
 				$ext->add($contextname, $ttsid, '', new \ext_agi('propolys-tts.agi,"' . $ttstext . '",' . $ttsengine . ',' . $ttspath['path'] . ',"' . $ttsname . '"'));
-				$ext->add($contextname, $ttsid, '', new \ext_goto($ttsgoto));
+				if ($ttsgoto === '') {
+					$ext->add($contextname, $ttsid, '', new \ext_hangup());
+				} else {
+					$ext->add($contextname, $ttsid, '', new \ext_goto($ttsgoto));
+				}
 			}
 		}
 	}
